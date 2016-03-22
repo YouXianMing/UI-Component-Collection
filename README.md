@@ -128,3 +128,10 @@ The demo will demonstrate how to use it, enjoy it :)
 * 支持`富文本`
 * 支持`自定义view`
 * 支持`阅读百分比`
+
+
+### LineAnimationView
+
+> 水平循环播放无间隔动画效果，用于提示loading等
+
+![demo.gif](http://images0.cnblogs.com/blog2015/607542/201507/041355326632281.gif)
