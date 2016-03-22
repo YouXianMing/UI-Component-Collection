@@ -45,3 +45,8 @@
 * 支持颜色定制
 * 进度条动画可以自己控制
 * 简单易用
+
+
+### AbstractAlertView
+
+![demo.png](http://images2015.cnblogs.com/blog/607542/201510/607542-20151015221733054-1203351216.png)
