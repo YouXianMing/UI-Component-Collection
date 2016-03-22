@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10CF13F71B8F346000D38932 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CF13F61B8F346000D38932 /* main.m */; };
+		10CF13FA1B8F346000D38932 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CF13F91B8F346000D38932 /* AppDelegate.m */; };
+		10CF13FD1B8F346000D38932 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CF13FC1B8F346000D38932 /* ViewController.m */; };
+		10CF14001B8F346000D38932 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CF13FE1B8F346000D38932 /* Main.storyboard */; };
+		10CF14021B8F346000D38932 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CF14011B8F346000D38932 /* Images.xcassets */; };
+		10CF14051B8F346000D38932 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10CF14031B8F346000D38932 /* LaunchScreen.xib */; };
+		10CF141C1B8F347700D38932 /* BaseControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CF141B1B8F347700D38932 /* BaseControl.m */; };
+		10CF141F1B8F356C00D38932 /* PressButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 10CF141E1B8F356C00D38932 /* PressButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10CF13F11B8F346000D38932 /* BaseButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BaseButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		10CF13F51B8F346000D38932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10CF13F61B8F346000D38932 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10CF13F81B8F346000D38932 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		10CF13F91B8F346000D38932 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		10CF13FB1B8F346000D38932 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		10CF13FC1B8F346000D38932 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		10CF13FF1B8F346000D38932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		10CF14011B8F346000D38932 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		10CF14041B8F346000D38932 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		10CF141A1B8F347700D38932 /* BaseControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseControl.h; sourceTree = "<group>"; };
+		10CF141B1B8F347700D38932 /* BaseControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseControl.m; sourceTree = "<group>"; };
+		10CF141D1B8F356C00D38932 /* PressButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PressButton.h; sourceTree = "<group>"; };
+		10CF141E1B8F356C00D38932 /* PressButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PressButton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		10CF13EE1B8F346000D38932 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10CF13E81B8F346000D38932 = {
+			isa = PBXGroup;
+			children = (
+				10CF13F31B8F346000D38932 /* BaseButton */,
+				10CF13F21B8F346000D38932 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		10CF13F21B8F346000D38932 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				10CF13F11B8F346000D38932 /* BaseButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		10CF13F31B8F346000D38932 /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				10CF13F81B8F346000D38932 /* AppDelegate.h */,
+				10CF13F91B8F346000D38932 /* AppDelegate.m */,
+				10CF13FB1B8F346000D38932 /* ViewController.h */,
+				10CF13FC1B8F346000D38932 /* ViewController.m */,
+				10CF141A1B8F347700D38932 /* BaseControl.h */,
+				10CF141B1B8F347700D38932 /* BaseControl.m */,
+				10CF141D1B8F356C00D38932 /* PressButton.h */,
+				10CF141E1B8F356C00D38932 /* PressButton.m */,
+				10CF13FE1B8F346000D38932 /* Main.storyboard */,
+				10CF14011B8F346000D38932 /* Images.xcassets */,
+				10CF14031B8F346000D38932 /* LaunchScreen.xib */,
+				10CF13F41B8F346000D38932 /* Supporting Files */,
+			);
+			path = BaseButton;
+			sourceTree = "<group>";
+		};
+		10CF13F41B8F346000D38932 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				10CF13F51B8F346000D38932 /* Info.plist */,
+				10CF13F61B8F346000D38932 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		10CF13F01B8F346000D38932 /* BaseButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 10CF14141B8F346000D38932 /* Build configuration list for PBXNativeTarget "BaseButton" */;
+			buildPhases = (
+				10CF13ED1B8F346000D38932 /* Sources */,
+				10CF13EE1B8F346000D38932 /* Frameworks */,
+				10CF13EF1B8F346000D38932 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaseButton;
+			productName = BaseButton;
+			productReference = 10CF13F11B8F346000D38932 /* BaseButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		10CF13E91B8F346000D38932 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = YouXianMing;
+				TargetAttributes = {
+					10CF13F01B8F346000D38932 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 10CF13EC1B8F346000D38932 /* Build configuration list for PBXProject "BaseButton" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 10CF13E81B8F346000D38932;
+			productRefGroup = 10CF13F21B8F346000D38932 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				10CF13F01B8F346000D38932 /* BaseButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10CF13EF1B8F346000D38932 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CF14001B8F346000D38932 /* Main.storyboard in Resources */,
+				10CF14051B8F346000D38932 /* LaunchScreen.xib in Resources */,
+				10CF14021B8F346000D38932 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10CF13ED1B8F346000D38932 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10CF141C1B8F347700D38932 /* BaseControl.m in Sources */,
+				10CF141F1B8F356C00D38932 /* PressButton.m in Sources */,
+				10CF13FD1B8F346000D38932 /* ViewController.m in Sources */,
+				10CF13FA1B8F346000D38932 /* AppDelegate.m in Sources */,
+				10CF13F71B8F346000D38932 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		10CF13FE1B8F346000D38932 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10CF13FF1B8F346000D38932 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		10CF14031B8F346000D38932 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				10CF14041B8F346000D38932 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10CF14121B8F346000D38932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		10CF14131B8F346000D38932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		10CF14151B8F346000D38932 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BaseButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YouXianMing.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		10CF14161B8F346000D38932 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BaseButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YouXianMing.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10CF13EC1B8F346000D38932 /* Build configuration list for PBXProject "BaseButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CF14121B8F346000D38932 /* Debug */,
+				10CF14131B8F346000D38932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		10CF14141B8F346000D38932 /* Build configuration list for PBXNativeTarget "BaseButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10CF14151B8F346000D38932 /* Debug */,
+				10CF14161B8F346000D38932 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 10CF13E91B8F346000D38932 /* Project object */;
+}
