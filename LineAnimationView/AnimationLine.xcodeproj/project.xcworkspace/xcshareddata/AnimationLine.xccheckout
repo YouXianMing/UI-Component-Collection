@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>97698925-EBE8-4685-B9CC-D5BA3945CB32</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AnimationLine</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>58D1F2A2A975DEFFB3C81C461222EA68AB0D9F33</key>
+		<string>https://github.com/YouXianMing/LineAnimationView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AnimationLine.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>58D1F2A2A975DEFFB3C81C461222EA68AB0D9F33</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/YouXianMing/LineAnimationView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>58D1F2A2A975DEFFB3C81C461222EA68AB0D9F33</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>58D1F2A2A975DEFFB3C81C461222EA68AB0D9F33</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LineAnimationView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
