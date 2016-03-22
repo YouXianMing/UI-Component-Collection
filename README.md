@@ -66,3 +66,14 @@
 使用详情请参考[TTTAttributedLabel](https://github.com/TTTAttributedLabel/TTTAttributedLabel)
 
 ![demo.gif](http://images0.cnblogs.com/blog2015/607542/201506/131111327239875.gif)
+
+
+### Special-Effect-Cell
+
+> Special effect on tableView cell.
+
+```
+It's a demo to demonstrate how to use special effect on UITableView cell.
+```
+
+![demo.gif图片](http://images.cnitblog.com/blog2015/607542/201504/091134007433262.gif) 
