@@ -1,0 +1,27 @@
+//
+//  BookTextView.pch
+//  BookTextView
+//
+//  Created by YouXianMing on 15/5/18.
+//  Copyright (c) 2015年 YouXianMing. All rights reserved.
+//
+
+#ifndef BookTextView_BookTextView_pch
+#define BookTextView_BookTextView_pch
+
+/*----------------------------------------------
+ * $(SRCROOT)/$(PROJECT_NAME)/BookTextView.pch *
+ ----------------------------------------------*/
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif
