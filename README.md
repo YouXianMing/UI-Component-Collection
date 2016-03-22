@@ -34,3 +34,14 @@
 * use UITableViewHeaderFooterView to show the font title
 
 ![demo.gif图片](http://images.cnitblog.com/blog2015/607542/201504/081415404465434.gif) 
+
+
+### ColorfulProgressView
+
+> 彩色进度条指示器
+
+![demo.gif](http://images0.cnblogs.com/blog2015/607542/201507/132035475636980.gif)
+
+* 支持颜色定制
+* 进度条动画可以自己控制
+* 简单易用
