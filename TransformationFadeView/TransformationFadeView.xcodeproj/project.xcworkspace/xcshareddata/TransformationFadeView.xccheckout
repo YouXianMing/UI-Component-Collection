@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>48646AE6-A2BA-47CB-A671-EE32F7B6471C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TransformationFadeView</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0F19A8D6C61E3D40A6FF6A29416C4DFC2A75403D</key>
+		<string>https://github.com/YouXianMing/TransformationFadeView.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TransformationFadeView.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0F19A8D6C61E3D40A6FF6A29416C4DFC2A75403D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/YouXianMing/TransformationFadeView.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0F19A8D6C61E3D40A6FF6A29416C4DFC2A75403D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0F19A8D6C61E3D40A6FF6A29416C4DFC2A75403D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TransformationFadeView</string>
+		</dict>
+	</array>
+</dict>
+</plist>
