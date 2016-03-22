@@ -17,3 +17,10 @@
 ### GradientColorView
 
 ![demo.png](http://images2015.cnblogs.com/blog/607542/201512/607542-20151215220156334-1605653129.png)
+
+
+### TransformationFadeView
+
+> Animation With MaskView
+
+![normal图片](http://images.cnitblog.com/blog2015/607542/201504/161449574327027.gif) 
