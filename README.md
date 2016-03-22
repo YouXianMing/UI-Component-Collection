@@ -88,3 +88,20 @@ It's a demo to demonstrate how to use special effect on UITableView cell.
 ```
 
 ![one.gif](http://images.cnitblog.com/blog2015/607542/201505/011028213653537.gif)
+
+
+### POPNumberCount
+
+You can use it to build your own number count animation
+
+> Features
+
+![POPNumberCount picture](http://images.cnitblog.com/blog2015/607542/201504/101457451803342.gif) 
+
+* Support CAMediaTimingFunction.
+* Support stop animation and resume animation (use currentValue to resume).
+* Easy to build your own class by subclassing from class `POPNumberCount`.
+
+> Notice
+
+The demo will demonstrate how to use it, enjoy it :)
