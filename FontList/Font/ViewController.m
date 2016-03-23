@@ -35,9 +35,10 @@
     [self.view addSubview:self.tableView];
 }
 
-
 - (UIView *)tableView {
+    
     if (_tableView == nil) {
+        
         _tableView = [[UITableView alloc] initWithFrame:self.view.bounds
                                                       style:UITableViewStylePlain];
         _tableView.delegate       = self;
@@ -51,35 +52,36 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSArray *fontArray = self.fontLists[self.titlesArray[section]];
     
+    NSArray *fontArray = self.fontLists[self.titlesArray[section]];
     return fontArray.count;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
     return self.titlesArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    FontCell *cell = [tableView dequeueReusableCellWithIdentifier:FONT_CELL];
     
+    FontCell *cell      = [tableView dequeueReusableCellWithIdentifier:FONT_CELL];
     NSArray  *fontArray = self.fontLists[self.titlesArray[indexPath.section]];
     NSString *fontName  = fontArray[indexPath.row];
-    
     [cell accessData:fontName];
     
     return cell;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    FontTitleHeaderView *titleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:FONT_TITLE];
     
+    FontTitleHeaderView *titleView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:FONT_TITLE];
     [titleView accessData:self.titlesArray[section]];
     
     return titleView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
     return 20;
 }
 

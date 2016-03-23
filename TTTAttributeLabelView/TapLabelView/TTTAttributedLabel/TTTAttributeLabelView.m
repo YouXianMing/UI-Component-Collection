@@ -17,6 +17,7 @@
  *  @return 转换后的CFString
  */
 static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
+    
     return (__bridge NSString *)cfString;
 }
 
@@ -34,6 +35,7 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 @implementation RangeFlag
 
 + (RangeFlag *)rangeFlagWithFlag:(NSString *)flag range:(NSRange)range {
+    
     RangeFlag *rangeFlag = [RangeFlag new];
     rangeFlag.flag       = flag;
     rangeFlag.range      = range;
@@ -57,8 +59,8 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 @implementation TTTAttributeLabelView
 
 - (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
+    
+    if (self = [super initWithFrame:frame]) {
         
         [self setup];
     }
@@ -81,19 +83,21 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 }
 
 - (void)reset {
+    
     self.label.text = nil;
     [self.links removeAllObjects];
 }
 
 - (void)render {
+    
     if (self.attributedString.string.length <= 0) {
+        
         return;
     }
     
     self.label.text = self.attributedString;
     
     [self linkStyles];
-    
     [self addLinks];
 }
 
@@ -108,13 +112,11 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 
 - (void)linkStyles {
     
-    
     UIColor           *linkColor                 = (self.linkColor == nil ? [UIColor blueColor] : self.linkColor);
     CTUnderlineStyle   linkUnderLineStyle        = [self checkEnumValueValid:self.linkUnderLineStyle];
     UIColor           *activeLinkColor           = (self.activeLinkColor == nil ? [UIColor redColor] : self.activeLinkColor);
     CTUnderlineStyle   activelinkUnderLineStyle  = [self checkEnumValueValid:self.activelinkUnderLineStyle];
 
-    
     // 没有点击时候的样式
     self.label.linkAttributes       = @{nsStringWithCfString(kCTForegroundColorAttributeName) : linkColor,
                                         nsStringWithCfString(kCTUnderlineStyleAttributeName)  : [NSNumber numberWithInt:linkUnderLineStyle]};
@@ -125,18 +127,24 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 }
 
 - (CTUnderlineStyle)checkEnumValueValid:(CTUnderlineStyle)style {
+    
     if (style == kCTUnderlineStyleNone || style == kCTUnderlineStyleSingle || style == kCTUnderlineStyleThick || style == kCTUnderlineStyleDouble) {
+        
         return style;
+        
     } else {
+        
         return kCTUnderlineStyleSingle;
     }
 }
 
 - (void)addLinkStringRange:(NSRange)linkStringRange flag:(NSString *)flag {
+    
     [self.links addObject:[RangeFlag rangeFlagWithFlag:flag range:linkStringRange]];
 }
 
 - (void)resetSize {
+    
     [self.label sizeToFit];
     
     CGFloat x      = self.frame.origin.x;
@@ -148,6 +156,7 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 }
 
 + (CGSize)sizeThatFitsAttributedString:(NSAttributedString *)attributedString withFixedWidth:(CGFloat)width {
+    
     return [TTTAttributedLabel sizeThatFitsAttributedString:attributedString
                                             withConstraints:CGSizeMake(width, 0)
                                      limitedToNumberOfLines:0];
@@ -155,7 +164,9 @@ static inline NSString*  nsStringWithCfString(CFStringRef cfString) {
 
 #pragma mark - 超链接代理
 - (void)attributedLabel:(TTTAttributedLabel *)label didSelectLinkWithURL:(NSURL *)url {
+    
     if (_delegate && [_delegate respondsToSelector:@selector(TTTAttributeLabelView:linkFlag:)]) {
+        
         [_delegate TTTAttributeLabelView:self linkFlag:url.absoluteString];
     }
 }

@@ -11,8 +11,8 @@
 #import "ExclusionView.h"
 #import "BookTextView.h"
 
-#define  Width                             [UIScreen mainScreen].bounds.size.width
-#define  Height                            [UIScreen mainScreen].bounds.size.height
+#define  Width    [UIScreen mainScreen].bounds.size.width
+#define  Height   [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController ()<UITextViewDelegate>
 
@@ -23,18 +23,17 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
     
+    [super viewDidLoad];
     
     // 读取文本
     NSString *text = [NSString stringWithContentsOfFile:[NSBundle.mainBundle URLForResource:@"lorem" withExtension:@"txt"].path
                                                encoding:NSUTF8StringEncoding
                                                   error:nil];
     
-    
     // 初始化bookView
-    self.bookView                     = [[BookTextView alloc] initWithFrame:CGRectMake(10, 10, Width - 20, Height - 20)];
-    self.bookView.textString          = text;
+    self.bookView            = [[BookTextView alloc] initWithFrame:CGRectMake(10, 10, Width - 20, Height - 20)];
+    self.bookView.textString = text;
     
     // 设置段落样式
     self.bookView.paragraphAttributes = [ParagraphAttributes qingKeBengYue];
@@ -52,21 +51,17 @@
     imageView.image              = [UIImage imageNamed:@"demo"];
     [exclusionView addSubview:imageView];
     
-    
     // 构建view
     [self.bookView buildWidgetView];
     [self.view addSubview:self.bookView];
     
-    
     // 延时0.01s执行
-    [self performSelector:@selector(event)
-               withObject:nil
-               afterDelay:0.01];
+    [self performSelector:@selector(event) withObject:nil afterDelay:0.01];
 }
 
 - (void)event {
+    
     [self.bookView moveToTextPercent:0.00];
 }
-
 
 @end

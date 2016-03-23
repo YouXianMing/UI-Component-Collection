@@ -12,8 +12,8 @@
 
 #pragma mark - 默认配置
 - (instancetype)init {
-    self = [super init];
-    if (self) {
+    
+    if (self = [super init]) {
         
         [self setup];
     }
@@ -76,7 +76,6 @@
     [cgColors addObject:(id)[[UIColor colorWithRed:0.2f green:0.f blue:0.f alpha:1.f] CGColor]];
     [cgColors addObject:(id)[[UIColor colorWithRed:0.2f green:0.f blue:0.f alpha:1.f] CGColor]];
     
-    
     color.cgColors = cgColors;
     color.duration = 0.1f;
     
@@ -85,9 +84,7 @@
 
 + (ProgressColor *)yellowGradientColor {
 
-    
-    ProgressColor *color = [ProgressColor new];
-    
+    ProgressColor *color     = [ProgressColor new];
     NSMutableArray *cgColors = [NSMutableArray array];
     
     [cgColors addObject:(id)[[UIColor colorWithRed:0 green:0.1 blue:0.f alpha:1.f] CGColor]];
@@ -96,7 +93,6 @@
     [cgColors addObject:(id)[[UIColor colorWithRed:0 green:0.3 blue:0.f alpha:1.f] CGColor]];
     [cgColors addObject:(id)[[UIColor colorWithRed:0 green:0.2 blue:0.f alpha:1.f] CGColor]];
     [cgColors addObject:(id)[[UIColor colorWithRed:0 green:0.1 blue:0.f alpha:1.f] CGColor]];
-    
     
     color.cgColors = cgColors;
     color.duration = 0.5f;

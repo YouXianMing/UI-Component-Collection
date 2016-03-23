@@ -10,8 +10,7 @@
 
 @interface LineAnimationView ()
 
-@property (nonatomic, strong) UIView *contentView;
-
+@property (nonatomic, strong) UIView      *contentView;
 @property (nonatomic, strong) UIImageView *leftImageView;
 @property (nonatomic, strong) UIImageView *rightImageView;
 
@@ -22,11 +21,9 @@
 #pragma mark - 初始化
 - (instancetype)initWithFrame:(CGRect)frame {
     
-    self = [super initWithFrame:frame];
-    if (self) {
+    if (self = [super initWithFrame:frame]) {
         
         [self defaultConfig];
-        
         [self setup];
     }
     
@@ -102,7 +99,6 @@
         
         _contentView.frame     = startRect;
         [_contentView.layer addAnimation:line forKey:nil];
-        
     }
 }
 

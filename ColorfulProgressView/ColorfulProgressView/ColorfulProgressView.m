@@ -43,8 +43,8 @@
 
 - (void)setup {
 
-    _width    = self.frame.size.width;
-    _height   = self.frame.size.height;
+    _width  = self.frame.size.width;
+    _height = self.frame.size.height;
     
     // baseView
     self.baseView                     = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, _height)];
@@ -74,11 +74,9 @@
         _progressColor.cgColors = cgColors;
     }
     
-    
     self.gradientLayer.colors     = _progressColor.cgColors;
     self.gradientLayer.startPoint = _progressColor.startPoint;
     self.gradientLayer.endPoint   = _progressColor.endPoint;
-    
     
     [self doAnimation];
 }
@@ -117,6 +115,7 @@
     ColorfulProgressView *progressView = [[self alloc] initWithFrame:frame];
     
     if (progressColor) {
+        
         progressView.progressColor = progressColor;
     }
     
@@ -132,10 +131,15 @@
     _progress = progress;
     
     if (progress <= 0) {
+        
         _baseView.frame = CGRectMake(0, 0, 0, _height);
+        
     } else if (progress <= 1) {
+        
         _baseView.frame = CGRectMake(0, 0, _progress * _width, _height);
+        
     } else {
+        
         _baseView.frame = CGRectMake(0, 0, _width, _height);
     }
 }

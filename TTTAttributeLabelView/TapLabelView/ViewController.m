@@ -20,6 +20,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
     self.view.backgroundColor = [UIColor blackColor];
@@ -58,6 +59,7 @@
 }
 
 - (void)TTTAttributeLabelView:(TTTAttributeLabelView *)attributeLabelView linkFlag:(NSString *)flag {
+    
     NSLog(@"%@", flag);
 }
 

@@ -16,6 +16,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
     UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(100 - 5, 100, 3, 20 / 2)];

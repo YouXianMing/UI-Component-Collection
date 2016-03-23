@@ -16,16 +16,11 @@
 
 @interface ViewController ()
 
-
 @property (nonatomic, strong) AngleGradientView  *gradientMetal1View;
 @property (nonatomic, strong) AngleGradientView  *gradientMetal2View;
 @property (nonatomic, strong) AngleGradientView  *gradientRainbowView;
-
-
 @property (nonatomic, strong) NSTimer            *timer;
-
-
-@property (nonatomic, strong) CircleView  *circleMask;
+@property (nonatomic, strong) CircleView         *circleMask;
 
 @end
 
@@ -62,8 +57,6 @@
     [self.view addSubview:ranbowView];
     ranbowView.maskView = self.circleMask;
     
-    
-    
     // 定时器
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.f
                                                   target:self
@@ -74,11 +67,14 @@
 }
 
 - (void)timerEvent {
+    
     CGFloat percent        = arc4random() % 100 / 100.f;
     CGFloat anotherPercent = arc4random() % 100 / 100.f;
+    
     [self.circleMask strokeStart:(percent < anotherPercent ? percent : anotherPercent)
                    animationType:ExponentialEaseInOut
                         animated:YES duration:1.f];
+    
     [self.circleMask strokeEnd:(percent < anotherPercent ? anotherPercent : percent)
                  animationType:ExponentialEaseInOut
                       animated:YES duration:1.f];

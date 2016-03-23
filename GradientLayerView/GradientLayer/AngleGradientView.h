@@ -21,10 +21,6 @@ typedef enum : NSUInteger {
      */
     GradientRainbow,
     
-    
-    test,
-    
-    
 } EAngleGradientType;
 
 @interface AngleGradientView : UIView
@@ -38,10 +34,7 @@ typedef enum : NSUInteger {
  *
  *  @return 创建好的带环形渐变的view
  */
-- (instancetype)initWithFrame:(CGRect)frame
-                 withCGColors:(NSArray *)colors
-                withLocations:(NSArray *)locations;
-
+- (instancetype)initWithFrame:(CGRect)frame withCGColors:(NSArray *)colors withLocations:(NSArray *)locations;
 
 /**
  *  便利构造器,便捷的创建出指定风格的渐变环形的view
@@ -51,8 +44,7 @@ typedef enum : NSUInteger {
  *
  *  @return 创建好的带环形渐变的view
  */
-+ (instancetype)gradientViewWithFrame:(CGRect)frame
-                         gradientType:(EAngleGradientType)type;
++ (instancetype)gradientViewWithFrame:(CGRect)frame gradientType:(EAngleGradientType)type;
 
 
 @end

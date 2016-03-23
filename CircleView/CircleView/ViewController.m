@@ -32,13 +32,11 @@
     [self.circleView1 buildView];
     [self.view addSubview:self.circleView1];
 
-    
     // 圆圈2
     self.circleView2 = [CircleView circleViewWithFrame:CGRectMake(20 + 150, 20, 140, 140) lineWidth:70 lineColor:[UIColor blackColor]
                                              clockWise:YES startAngle:0];
     [self.circleView2 buildView];
     [self.view addSubview:self.circleView2];
-    
     
     // 圆圈3
     self.circleView3 = [CircleView circleViewWithFrame:CGRectMake(20 + 150, 20 + 150, 140, 140) lineWidth:2 lineColor:[UIColor blackColor]

@@ -10,8 +10,10 @@
 #import "TranformFadeView.h"
 
 typedef enum : NSUInteger {
+    
     TYPE_ONE,
     TYPE_TWO,
+    
 } EType;
 
 @interface ViewController ()
@@ -27,6 +29,7 @@ typedef enum : NSUInteger {
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor blackColor];
@@ -39,12 +42,9 @@ typedef enum : NSUInteger {
     self.tranformFadeViewOne.horizontalCount = 12;
     self.tranformFadeViewOne.center          = self.view.center;
     [self.tranformFadeViewOne buildMaskView];
-    
     self.tranformFadeViewOne.fadeDuradtion        = 1.f;
     self.tranformFadeViewOne.animationGapDuration = 0.1f;
-    
     [self.view addSubview:self.tranformFadeViewOne];
-
     
     // 图片2
     self.tranformFadeViewTwo                 = [[TranformFadeView alloc] initWithFrame:self.view.bounds];
@@ -54,14 +54,10 @@ typedef enum : NSUInteger {
     self.tranformFadeViewTwo.horizontalCount = 12;
     self.tranformFadeViewTwo.center          = self.view.center;
     [self.tranformFadeViewTwo buildMaskView];
-    
     self.tranformFadeViewTwo.fadeDuradtion        = 1.f;
     self.tranformFadeViewTwo.animationGapDuration = 0.1f;
-    
     [self.view addSubview:self.tranformFadeViewTwo];
     [self.tranformFadeViewTwo fadeAnimated:YES];
-    
-    
     
     // 定时器
     self.timer = [NSTimer scheduledTimerWithTimeInterval:6
@@ -73,20 +69,20 @@ typedef enum : NSUInteger {
 }
 
 - (void)timerEvent {
+    
     if (self.type == TYPE_ONE) {
-        self.type = TYPE_TWO;
         
+        self.type = TYPE_TWO;
         [self.view sendSubviewToBack:self.tranformFadeViewTwo];
         [self.tranformFadeViewTwo showAnimated:NO];
         [self.tranformFadeViewOne fadeAnimated:YES];
         
     } else {
-        self.type = TYPE_ONE;
         
+        self.type = TYPE_ONE;
         [self.view sendSubviewToBack:self.tranformFadeViewOne];
         [self.tranformFadeViewOne showAnimated:NO];
         [self.tranformFadeViewTwo fadeAnimated:YES];
-
     }
 }
 

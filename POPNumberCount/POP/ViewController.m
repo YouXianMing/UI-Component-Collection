@@ -20,6 +20,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     // 显示用label
@@ -40,6 +41,7 @@
 }
 
 - (void)configNumberCount {
+    
     // 进行值的配置
     self.numberCount.fromValue      = self.numberCount.currentValue;
     self.numberCount.toValue        = (arc4random() % 100 / 1.f);
@@ -49,6 +51,7 @@
 }
 
 - (void)timerEvent {
+    
     [self configNumberCount];
     
     // 执行动画
@@ -56,7 +59,9 @@
 }
 
 - (UILabel *)label {
+    
     if (_label == nil) {
+        
         _label = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 320, 100)];
     }
     
@@ -64,6 +69,7 @@
 }
 
 - (void)numberCount:(POPNumberCount *)numberCount currentAttributedString:(NSAttributedString *)string {
+    
     self.label.attributedText = string;
 }
 

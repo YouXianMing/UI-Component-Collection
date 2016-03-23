@@ -21,6 +21,7 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
 
     // 数据源
@@ -39,6 +40,7 @@
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    
     // 发送广播
     [[NSNotificationCenter defaultCenter] postNotificationName:DATA_CELL
                                                         object:@(scrollView.contentOffset.y)
@@ -46,10 +48,12 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
     return self.dataSource.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     DataCell *cell  = [tableView dequeueReusableCellWithIdentifier:DATA_CELL];
     cell.indexPath  = indexPath;
     cell.label.text = self.dataSource[indexPath.row];
@@ -58,6 +62,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     return CELL_HEIGHT;
 }
 

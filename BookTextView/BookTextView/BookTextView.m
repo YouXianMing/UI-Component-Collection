@@ -9,11 +9,14 @@
 #import "BookTextView.h"
 
 typedef enum : NSUInteger {
+    
     EBOOK_NONE,              // 什么也不做
     EBOOK_CALCULATE_HEIGHT,  // 计算文本高度
+    
 } EBookTextViewStatus;
 
 @interface BookTextView ()<UITextViewDelegate> {
+    
     EBookTextViewStatus _bookStatus;
     
     CGFloat             _tmpOffsetY;
@@ -28,23 +31,19 @@ typedef enum : NSUInteger {
 
 @implementation BookTextView
 
-
-
 - (void)buildWidgetView {
-    
     
     // 获取长宽
     CGFloat width  = self.frame.size.width;
     CGFloat height = self.frame.size.height;
     
-    
     // 创建文本容器并设置段落样式
     NSTextStorage *storage = [[NSTextStorage alloc] initWithString:self.textString
                                                         attributes:self.paragraphAttributes];
     
-    
     // 设置富文本
     for (int count = 0; count < _attributes.count; count++) {
+        
         ConfigAttributedString *oneConfig = _attributes[count];
         [storage addAttribute:oneConfig.attribute
                         value:oneConfig.value
@@ -55,13 +54,11 @@ typedef enum : NSUInteger {
     NSLayoutManager *layoutManager = [NSLayoutManager new];
     [storage addLayoutManager:layoutManager];
     
-    
     // 显示的容器
     NSTextContainer *textContainer = [NSTextContainer new];
     CGSize size                    = CGSizeMake(width, MAXFLOAT);
     textContainer.size             = size;
     [layoutManager addTextContainer:textContainer];
-    
     
     // 给TextView添加带有内容和布局的容器
     self.textView = [[UITextView alloc] initWithFrame:CGRectMake(0, 0, width, height)
@@ -72,7 +69,6 @@ typedef enum : NSUInteger {
     self.textView.layer.masksToBounds              = YES;
     self.textView.showsVerticalScrollIndicator     = NO;
     self.textView.delegate                         = self;
-    
     
     // 如果有额外的views
     if (self.exclusionViews) {
@@ -96,7 +92,6 @@ typedef enum : NSUInteger {
     // 添加要显示的view
     [self addSubview:self.textView];
     
-    
     // 存储文本高度
     [self storeBookHeight];
 }
@@ -117,6 +112,7 @@ typedef enum : NSUInteger {
 }
 
 - (void)moveToTextPosition:(CGFloat)position {
+    
     [self.textView setContentOffset:CGPointMake(0, position) animated:NO];
 }
 
@@ -125,10 +121,15 @@ typedef enum : NSUInteger {
     // 计算出百分比
     CGFloat position = 0.f;
     if (percent >= 0 && percent <= 1) {
+        
         position = percent * _textHeight;
+        
     } else if (percent < 0) {
+        
         position = 0.f;
+        
     } else {
+        
         position = _textHeight;
     }
     
@@ -140,23 +141,28 @@ typedef enum : NSUInteger {
     
     // Y轴偏移量
     _tmpOffsetY = scrollView.contentOffset.y;
+    
     if (_bookStatus == EBOOK_NONE) {
         
-        
         _tmpPercent = _tmpOffsetY / _textHeight;
+        
         if (_tmpPercent >= 0 && _tmpPercent <= 1) {
+            
             _currentPercent = _tmpPercent;
+            
         } else if (_tmpPercent < 0) {
+            
             _currentPercent = 0.f;
+            
         } else {
+            
             _currentPercent = 1.f;
         }
         
-        
         NSLog(@"%f", _currentPercent);
         
-        
     } else if (_bookStatus == EBOOK_CALCULATE_HEIGHT) {
+        
         self.textHeight = scrollView.contentOffset.y;
     }
 }

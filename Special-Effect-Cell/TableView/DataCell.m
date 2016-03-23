@@ -18,6 +18,7 @@
 @implementation DataCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         
         self.selectionStyle  = UITableViewCellSelectionStyleNone;
@@ -36,6 +37,7 @@
 }
 
 - (void)buildViews {
+    
     self.label      = [[UILabel alloc] initWithFrame:CGRectMake(30, 0, 300, CELL_HEIGHT)];
     self.label.font = [UIFont fontWithName:@"Avenir-BookOblique" size:30.f];
     [self addSubview:self.label];
@@ -51,6 +53,7 @@
     CGFloat       offsetY = [[data valueForKey:@"object"] floatValue] - self.indexPath.row * CELL_HEIGHT;
     
     if (offsetY >= 0 && offsetY <= CELL_HEIGHT) {
+        
         // 根据百分比计算
         CGFloat percent  = 1 - offsetY / CELL_HEIGHT;
         
@@ -59,13 +62,16 @@
         self.blackView.x = 10 + percent * 50;
         
     } else if (offsetY >= - CELL_HEIGHT * 5 && offsetY <= - CELL_HEIGHT * 4) {
+        
         // 根据百分比计算
         CGFloat percent  = (offsetY + CELL_HEIGHT) / CELL_HEIGHT + 4;
         
         // 设置值
         self.label.alpha = percent;
         self.blackView.x = 10 + 50 + (1 - percent) * 50;
+        
     } else {
+        
         // 复位
         self.label.alpha = 1.f;
         self.blackView.x = 10 + 50;
@@ -73,10 +79,9 @@
 }
 
 - (void)dealloc {
+    
     // 移除通知中心
-    [[NSNotificationCenter defaultCenter] removeObserver:self
-                                                    name:DATA_CELL
-                                                  object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:DATA_CELL object:nil];
 }
 
 @end

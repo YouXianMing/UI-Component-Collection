@@ -11,6 +11,7 @@
 @implementation ExclusionView
 
 - (UIBezierPath *)createUIBezierPath {
+    
     return [UIBezierPath bezierPathWithRect:self.frame];
 }
 

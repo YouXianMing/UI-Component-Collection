@@ -13,12 +13,14 @@
 @implementation PercentCount
 
 - (void)startAnimation {
+    
     // 只有执行了代理才会执行计数引擎
     if (self.delegate && [self.delegate respondsToSelector:@selector(numberCount:currentAttributedString:)]) {
         /* 将计算出来的值通过writeBlock动态给控件设定 */
         self.conutAnimation.property = \
         [POPMutableAnimatableProperty propertyWithName:@"conutAnimation"
                                            initializer:^(POPMutableAnimatableProperty *prop) {
+                                               
                                                prop.writeBlock      = ^(id obj, const CGFloat values[]) {
                                                    NSNumber *number = @(values[0]);
                                                    self.currentValue = values[0];
@@ -35,10 +37,9 @@
 }
 
 - (NSAttributedString *)accessNSNumber:(NSNumber *)number {
+    
     CGFloat count    = [number floatValue];
-    
     UIColor *color   = [UIColor colorWithRed:count / 100.f green:0.f blue:0.f alpha:1.f];
-    
     
     NSString *countStr = [NSString stringWithFormat:@"%.f", count];
     NSString *totalStr = [NSString stringWithFormat:@"%@ mps", countStr];
@@ -65,6 +66,5 @@
                                                        
                                                        ]];
 }
-
 
 @end

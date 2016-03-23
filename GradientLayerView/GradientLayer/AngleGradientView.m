@@ -9,15 +9,12 @@
 #import "AngleGradientView.h"
 #import "AngleGradientLayer.h"
 
-
 @interface AngleGradientView () {
     
     AngleGradientLayer  *_angleGradientLayer;
-    
 }
 
 @end
-
 
 @implementation AngleGradientView
 
@@ -25,36 +22,36 @@
  *  重置layer为AngleGradientLayer
  */
 + (Class)layerClass {
+    
     return [AngleGradientLayer class];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
+    
     return [self initWithFrame:frame withCGColors:nil withLocations:nil];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame withCGColors:(NSArray *)colors withLocations:(NSArray *)locations {
     
-    self = [super initWithFrame:frame];
-    if (self) {
+    if (self = [super initWithFrame:frame]) {
+        
         _angleGradientLayer = (AngleGradientLayer *)self.layer;
         
         if (colors != nil) {
+            
             _angleGradientLayer.colors    = colors;
             _angleGradientLayer.locations = locations;
         }
-        
     }
     
     return self;
 }
 
-+ (instancetype)gradientViewWithFrame:(CGRect)frame
-                         gradientType:(EAngleGradientType)type {
++ (instancetype)gradientViewWithFrame:(CGRect)frame gradientType:(EAngleGradientType)type {
     
     NSMutableArray    *colors            = nil;
     NSMutableArray    *locations         = nil;
     AngleGradientView *angleGradientView = nil;
-    
     
     if (type == GradientMetalTypeOne) {
         
@@ -89,7 +86,6 @@
         [colors addObject:(id)[UIColor colorWithRed:0 green:0 blue:1 alpha:1].CGColor];
         [colors addObject:(id)[UIColor colorWithRed:1 green:0 blue:1 alpha:1].CGColor];
         [colors addObject:(id)[UIColor colorWithRed:1 green:0 blue:0 alpha:1].CGColor];
-
     }
     
     angleGradientView = [[AngleGradientView alloc] initWithFrame:frame
