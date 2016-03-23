@@ -135,3 +135,10 @@ The demo will demonstrate how to use it, enjoy it :)
 > 水平循环播放无间隔动画效果，用于提示loading等
 
 ![demo.gif](http://images0.cnblogs.com/blog2015/607542/201507/041355326632281.gif)
+
+
+### Swift-EasingAnimation
+
+> swift版的Easing动画
+
+![demo.gif](http://images2015.cnblogs.com/blog/607542/201510/607542-20151021144536895-433981780.gif)
