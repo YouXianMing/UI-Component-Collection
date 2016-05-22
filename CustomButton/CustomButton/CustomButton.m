@@ -16,14 +16,31 @@
 @property (nonatomic, strong) UILabel  *highlightedLabel;
 @property (nonatomic, strong) UILabel  *disabledLabel;
 @property (nonatomic, strong) UIView   *backgroundView;
+@property (nonatomic) CGFloat           animationDuration;
 
 @end
 
 @implementation CustomButton
 
+- (void)layoutSubviews {
+    
+    [super layoutSubviews];
+    
+    self.normalLabel.frame      = self.bounds;
+    self.highlightedLabel.frame = self.bounds;
+    self.backgroundView.frame   = self.bounds;
+    self.backgroundView.frame   = self.bounds;
+    
+    [self setVerticalOffset:_verticalOffset];
+    [self setHorizontalOffset:_horizontalOffset];
+}
+
 - (instancetype)initWithFrame:(CGRect)frame {
     
     if (self = [super initWithFrame:frame]) {
+        
+        // 动画时间
+        self.animationDuration = 0.25f;
         
         // 激活
         _enableEvent = YES;
@@ -155,7 +172,7 @@
         
     } else {
         
-        [UIView animateWithDuration:0.25f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [UIView animateWithDuration:self.animationDuration delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             
             self.normalLabel.alpha      = 1.f;
             self.highlightedLabel.alpha = 0.f;
@@ -179,7 +196,7 @@
         
     } else {
         
-        [UIView animateWithDuration:0.25f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [UIView animateWithDuration:self.animationDuration delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             
             self.normalLabel.alpha      = 0.f;
             self.highlightedLabel.alpha = 1.f;
@@ -203,7 +220,7 @@
         
     } else {
         
-        [UIView animateWithDuration:0.25f delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [UIView animateWithDuration:self.animationDuration delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
             
             self.normalLabel.alpha      = 0.f;
             self.highlightedLabel.alpha = 0.f;
@@ -249,7 +266,7 @@
     _verticalOffset = verticalOffset;
     
     CGRect frame                = self.normalLabel.frame;
-    frame.origin.x              = verticalOffset;
+    frame.origin.y              = verticalOffset;
     self.normalLabel.frame      = frame;
     self.highlightedLabel.frame = frame;
     self.disabledLabel.frame    = frame;
@@ -260,7 +277,7 @@
     _horizontalOffset = horizontalOffset;
     
     CGRect frame                = self.normalLabel.frame;
-    frame.origin.y              = horizontalOffset;
+    frame.origin.x              = horizontalOffset;
     self.normalLabel.frame      = frame;
     self.highlightedLabel.frame = frame;
     self.disabledLabel.frame    = frame;
