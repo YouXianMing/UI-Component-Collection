@@ -26,6 +26,7 @@
     
     [super layoutSubviews];
     
+    self.button.frame           = self.bounds;
     self.normalLabel.frame      = self.bounds;
     self.highlightedLabel.frame = self.bounds;
     self.backgroundView.frame   = self.bounds;
