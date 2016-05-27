@@ -1,0 +1,508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		101541891BF425A000E59437 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 101541881BF425A000E59437 /* main.m */; };
+		1015418C1BF425A000E59437 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015418B1BF425A000E59437 /* AppDelegate.m */; };
+		1015418F1BF425A000E59437 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015418E1BF425A000E59437 /* ViewController.m */; };
+		101541921BF425A000E59437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101541901BF425A000E59437 /* Main.storyboard */; };
+		101541941BF425A000E59437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 101541931BF425A000E59437 /* Assets.xcassets */; };
+		101541971BF425A000E59437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101541951BF425A000E59437 /* LaunchScreen.storyboard */; };
+		101541A01BF425D000E59437 /* CGContextObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1015419F1BF425D000E59437 /* CGContextObject.m */; };
+		101541A31BF4271900E59437 /* CGContextObjectConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 101541A21BF4271900E59437 /* CGContextObjectConfig.m */; };
+		101541A61BF4294000E59437 /* RGBColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 101541A51BF4294000E59437 /* RGBColor.m */; };
+		101541B11BF4894500E59437 /* DrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 101541B01BF4894500E59437 /* DrawLineViewController.m */; };
+		101541B41BF48A5A00E59437 /* DrawLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 101541B31BF48A5A00E59437 /* DrawLineView.m */; };
+		10381E8D1BF9625700E5E476 /* DrawStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E8C1BF9625700E5E476 /* DrawStringViewController.m */; };
+		10381E901BF9626600E5E476 /* DrawStringView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E8F1BF9626600E5E476 /* DrawStringView.m */; };
+		10381EA11BF963D900E5E476 /* StringAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E941BF963D900E5E476 /* StringAttribute.m */; };
+		10381EA21BF963D900E5E476 /* FontAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E981BF963D900E5E476 /* FontAttribute.m */; };
+		10381EA31BF963D900E5E476 /* ForegroundColorAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E9A1BF963D900E5E476 /* ForegroundColorAttribute.m */; };
+		10381EA41BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E9D1BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.m */; };
+		10381EA51BF963D900E5E476 /* NSString+StringAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381E9F1BF963D900E5E476 /* NSString+StringAttribute.m */; };
+		10381EAC1BF96E5D00E5E476 /* DrawGradientColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381EAB1BF96E5D00E5E476 /* DrawGradientColorViewController.m */; };
+		10381EAF1BF96E8900E5E476 /* DrawGradientColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381EAE1BF96E8900E5E476 /* DrawGradientColorView.m */; };
+		10381EB21BF96F7000E5E476 /* GradientColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381EB11BF96F7000E5E476 /* GradientColor.m */; };
+		10381EB61BF97B0F00E5E476 /* DrawImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381EB51BF97B0F00E5E476 /* DrawImageViewController.m */; };
+		10381EB91BF97B2900E5E476 /* DrawImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10381EB81BF97B2900E5E476 /* DrawImageView.m */; };
+		10381EBB1BF97C4200E5E476 /* image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10381EBA1BF97C4200E5E476 /* image@2x.png */; };
+		10EF26A71BF48EFF00CF2A94 /* DrawRectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EF26A61BF48EFF00CF2A94 /* DrawRectViewController.m */; };
+		10EF26AA1BF48F1100CF2A94 /* DrawRectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10EF26A91BF48F1100CF2A94 /* DrawRectView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		101541841BF425A000E59437 /* CGContextObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGContextObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		101541881BF425A000E59437 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1015418A1BF425A000E59437 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1015418B1BF425A000E59437 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1015418D1BF425A000E59437 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1015418E1BF425A000E59437 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		101541911BF425A000E59437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		101541931BF425A000E59437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		101541961BF425A000E59437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		101541981BF425A000E59437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1015419E1BF425D000E59437 /* CGContextObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextObject.h; sourceTree = "<group>"; };
+		1015419F1BF425D000E59437 /* CGContextObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextObject.m; sourceTree = "<group>"; };
+		101541A11BF4271900E59437 /* CGContextObjectConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGContextObjectConfig.h; sourceTree = "<group>"; };
+		101541A21BF4271900E59437 /* CGContextObjectConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGContextObjectConfig.m; sourceTree = "<group>"; };
+		101541A41BF4294000E59437 /* RGBColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGBColor.h; sourceTree = "<group>"; };
+		101541A51BF4294000E59437 /* RGBColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RGBColor.m; sourceTree = "<group>"; };
+		101541AF1BF4894500E59437 /* DrawLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineViewController.h; sourceTree = "<group>"; };
+		101541B01BF4894500E59437 /* DrawLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineViewController.m; sourceTree = "<group>"; };
+		101541B21BF48A5A00E59437 /* DrawLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawLineView.h; sourceTree = "<group>"; };
+		101541B31BF48A5A00E59437 /* DrawLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawLineView.m; sourceTree = "<group>"; };
+		10381E8B1BF9625700E5E476 /* DrawStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawStringViewController.h; sourceTree = "<group>"; };
+		10381E8C1BF9625700E5E476 /* DrawStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawStringViewController.m; sourceTree = "<group>"; };
+		10381E8E1BF9626600E5E476 /* DrawStringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawStringView.h; sourceTree = "<group>"; };
+		10381E8F1BF9626600E5E476 /* DrawStringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawStringView.m; sourceTree = "<group>"; };
+		10381E931BF963D900E5E476 /* StringAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAttribute.h; sourceTree = "<group>"; };
+		10381E941BF963D900E5E476 /* StringAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringAttribute.m; sourceTree = "<group>"; };
+		10381E951BF963D900E5E476 /* StringAttributeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAttributeProtocol.h; sourceTree = "<group>"; };
+		10381E971BF963D900E5E476 /* FontAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontAttribute.h; sourceTree = "<group>"; };
+		10381E981BF963D900E5E476 /* FontAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontAttribute.m; sourceTree = "<group>"; };
+		10381E991BF963D900E5E476 /* ForegroundColorAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForegroundColorAttribute.h; sourceTree = "<group>"; };
+		10381E9A1BF963D900E5E476 /* ForegroundColorAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForegroundColorAttribute.m; sourceTree = "<group>"; };
+		10381E9C1BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+StringAttribute.h"; sourceTree = "<group>"; };
+		10381E9D1BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+StringAttribute.m"; sourceTree = "<group>"; };
+		10381E9E1BF963D900E5E476 /* NSString+StringAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringAttribute.h"; sourceTree = "<group>"; };
+		10381E9F1BF963D900E5E476 /* NSString+StringAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringAttribute.m"; sourceTree = "<group>"; };
+		10381EA01BF963D900E5E476 /* StringAttributeHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAttributeHelper.h; sourceTree = "<group>"; };
+		10381EAA1BF96E5D00E5E476 /* DrawGradientColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawGradientColorViewController.h; sourceTree = "<group>"; };
+		10381EAB1BF96E5D00E5E476 /* DrawGradientColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawGradientColorViewController.m; sourceTree = "<group>"; };
+		10381EAD1BF96E8900E5E476 /* DrawGradientColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawGradientColorView.h; sourceTree = "<group>"; };
+		10381EAE1BF96E8900E5E476 /* DrawGradientColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawGradientColorView.m; sourceTree = "<group>"; };
+		10381EB01BF96F7000E5E476 /* GradientColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GradientColor.h; sourceTree = "<group>"; };
+		10381EB11BF96F7000E5E476 /* GradientColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GradientColor.m; sourceTree = "<group>"; };
+		10381EB41BF97B0F00E5E476 /* DrawImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageViewController.h; sourceTree = "<group>"; };
+		10381EB51BF97B0F00E5E476 /* DrawImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageViewController.m; sourceTree = "<group>"; };
+		10381EB71BF97B2900E5E476 /* DrawImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawImageView.h; sourceTree = "<group>"; };
+		10381EB81BF97B2900E5E476 /* DrawImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawImageView.m; sourceTree = "<group>"; };
+		10381EBA1BF97C4200E5E476 /* image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "image@2x.png"; sourceTree = "<group>"; };
+		10EF26A51BF48EFF00CF2A94 /* DrawRectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectViewController.h; sourceTree = "<group>"; };
+		10EF26A61BF48EFF00CF2A94 /* DrawRectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectViewController.m; sourceTree = "<group>"; };
+		10EF26A81BF48F1100CF2A94 /* DrawRectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawRectView.h; sourceTree = "<group>"; };
+		10EF26A91BF48F1100CF2A94 /* DrawRectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawRectView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		101541811BF425A000E59437 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1015417B1BF425A000E59437 = {
+			isa = PBXGroup;
+			children = (
+				101541861BF425A000E59437 /* CGContextObject */,
+				101541851BF425A000E59437 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		101541851BF425A000E59437 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				101541841BF425A000E59437 /* CGContextObject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		101541861BF425A000E59437 /* CGContextObject */ = {
+			isa = PBXGroup;
+			children = (
+				10381E911BF963D900E5E476 /* StringAttribute */,
+				101541AA1BF47C4B00E59437 /* CGContextObject */,
+				1015418A1BF425A000E59437 /* AppDelegate.h */,
+				1015418B1BF425A000E59437 /* AppDelegate.m */,
+				1015418D1BF425A000E59437 /* ViewController.h */,
+				1015418E1BF425A000E59437 /* ViewController.m */,
+				10EF26A41BF48EE500CF2A94 /* DrawRectViewController */,
+				101541AE1BF4892B00E59437 /* DrawLineViewController */,
+				10381E8A1BF9622C00E5E476 /* DrawStringViewController */,
+				10381EA91BF96E1900E5E476 /* DrawGradientColorViewController */,
+				10381EB31BF97AF300E5E476 /* DrawImageViewController */,
+				101541901BF425A000E59437 /* Main.storyboard */,
+				101541931BF425A000E59437 /* Assets.xcassets */,
+				101541951BF425A000E59437 /* LaunchScreen.storyboard */,
+				101541981BF425A000E59437 /* Info.plist */,
+				101541871BF425A000E59437 /* Supporting Files */,
+			);
+			path = CGContextObject;
+			sourceTree = "<group>";
+		};
+		101541871BF425A000E59437 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				101541881BF425A000E59437 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		101541AA1BF47C4B00E59437 /* CGContextObject */ = {
+			isa = PBXGroup;
+			children = (
+				1015419E1BF425D000E59437 /* CGContextObject.h */,
+				1015419F1BF425D000E59437 /* CGContextObject.m */,
+				101541A11BF4271900E59437 /* CGContextObjectConfig.h */,
+				101541A21BF4271900E59437 /* CGContextObjectConfig.m */,
+				101541A41BF4294000E59437 /* RGBColor.h */,
+				101541A51BF4294000E59437 /* RGBColor.m */,
+				10381EB01BF96F7000E5E476 /* GradientColor.h */,
+				10381EB11BF96F7000E5E476 /* GradientColor.m */,
+			);
+			name = CGContextObject;
+			sourceTree = "<group>";
+		};
+		101541AE1BF4892B00E59437 /* DrawLineViewController */ = {
+			isa = PBXGroup;
+			children = (
+				101541AF1BF4894500E59437 /* DrawLineViewController.h */,
+				101541B01BF4894500E59437 /* DrawLineViewController.m */,
+				101541B21BF48A5A00E59437 /* DrawLineView.h */,
+				101541B31BF48A5A00E59437 /* DrawLineView.m */,
+			);
+			name = DrawLineViewController;
+			sourceTree = "<group>";
+		};
+		10381E8A1BF9622C00E5E476 /* DrawStringViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10381E8B1BF9625700E5E476 /* DrawStringViewController.h */,
+				10381E8C1BF9625700E5E476 /* DrawStringViewController.m */,
+				10381E8E1BF9626600E5E476 /* DrawStringView.h */,
+				10381E8F1BF9626600E5E476 /* DrawStringView.m */,
+			);
+			name = DrawStringViewController;
+			sourceTree = "<group>";
+		};
+		10381E911BF963D900E5E476 /* StringAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				10381E921BF963D900E5E476 /* AbstractAttribute */,
+				10381E961BF963D900E5E476 /* ConcreteAttribute */,
+				10381E9B1BF963D900E5E476 /* StringAttribute+Category */,
+				10381EA01BF963D900E5E476 /* StringAttributeHelper.h */,
+			);
+			path = StringAttribute;
+			sourceTree = "<group>";
+		};
+		10381E921BF963D900E5E476 /* AbstractAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				10381E931BF963D900E5E476 /* StringAttribute.h */,
+				10381E941BF963D900E5E476 /* StringAttribute.m */,
+				10381E951BF963D900E5E476 /* StringAttributeProtocol.h */,
+			);
+			path = AbstractAttribute;
+			sourceTree = "<group>";
+		};
+		10381E961BF963D900E5E476 /* ConcreteAttribute */ = {
+			isa = PBXGroup;
+			children = (
+				10381E971BF963D900E5E476 /* FontAttribute.h */,
+				10381E981BF963D900E5E476 /* FontAttribute.m */,
+				10381E991BF963D900E5E476 /* ForegroundColorAttribute.h */,
+				10381E9A1BF963D900E5E476 /* ForegroundColorAttribute.m */,
+			);
+			path = ConcreteAttribute;
+			sourceTree = "<group>";
+		};
+		10381E9B1BF963D900E5E476 /* StringAttribute+Category */ = {
+			isa = PBXGroup;
+			children = (
+				10381E9C1BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.h */,
+				10381E9D1BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.m */,
+				10381E9E1BF963D900E5E476 /* NSString+StringAttribute.h */,
+				10381E9F1BF963D900E5E476 /* NSString+StringAttribute.m */,
+			);
+			path = "StringAttribute+Category";
+			sourceTree = "<group>";
+		};
+		10381EA91BF96E1900E5E476 /* DrawGradientColorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10381EAA1BF96E5D00E5E476 /* DrawGradientColorViewController.h */,
+				10381EAB1BF96E5D00E5E476 /* DrawGradientColorViewController.m */,
+				10381EAD1BF96E8900E5E476 /* DrawGradientColorView.h */,
+				10381EAE1BF96E8900E5E476 /* DrawGradientColorView.m */,
+			);
+			name = DrawGradientColorViewController;
+			sourceTree = "<group>";
+		};
+		10381EB31BF97AF300E5E476 /* DrawImageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10381EB41BF97B0F00E5E476 /* DrawImageViewController.h */,
+				10381EB51BF97B0F00E5E476 /* DrawImageViewController.m */,
+				10381EB71BF97B2900E5E476 /* DrawImageView.h */,
+				10381EB81BF97B2900E5E476 /* DrawImageView.m */,
+				10381EBA1BF97C4200E5E476 /* image@2x.png */,
+			);
+			name = DrawImageViewController;
+			sourceTree = "<group>";
+		};
+		10EF26A41BF48EE500CF2A94 /* DrawRectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				10EF26A51BF48EFF00CF2A94 /* DrawRectViewController.h */,
+				10EF26A61BF48EFF00CF2A94 /* DrawRectViewController.m */,
+				10EF26A81BF48F1100CF2A94 /* DrawRectView.h */,
+				10EF26A91BF48F1100CF2A94 /* DrawRectView.m */,
+			);
+			name = DrawRectViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		101541831BF425A000E59437 /* CGContextObject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1015419B1BF425A000E59437 /* Build configuration list for PBXNativeTarget "CGContextObject" */;
+			buildPhases = (
+				101541801BF425A000E59437 /* Sources */,
+				101541811BF425A000E59437 /* Frameworks */,
+				101541821BF425A000E59437 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGContextObject;
+			productName = CGContextObject;
+			productReference = 101541841BF425A000E59437 /* CGContextObject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1015417C1BF425A000E59437 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = ZiPeiYi;
+				TargetAttributes = {
+					101541831BF425A000E59437 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 1015417F1BF425A000E59437 /* Build configuration list for PBXProject "CGContextObject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1015417B1BF425A000E59437;
+			productRefGroup = 101541851BF425A000E59437 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				101541831BF425A000E59437 /* CGContextObject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		101541821BF425A000E59437 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				101541971BF425A000E59437 /* LaunchScreen.storyboard in Resources */,
+				10381EBB1BF97C4200E5E476 /* image@2x.png in Resources */,
+				101541941BF425A000E59437 /* Assets.xcassets in Resources */,
+				101541921BF425A000E59437 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		101541801BF425A000E59437 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10381EAC1BF96E5D00E5E476 /* DrawGradientColorViewController.m in Sources */,
+				10381E8D1BF9625700E5E476 /* DrawStringViewController.m in Sources */,
+				10EF26AA1BF48F1100CF2A94 /* DrawRectView.m in Sources */,
+				10381EAF1BF96E8900E5E476 /* DrawGradientColorView.m in Sources */,
+				10381EA51BF963D900E5E476 /* NSString+StringAttribute.m in Sources */,
+				101541A31BF4271900E59437 /* CGContextObjectConfig.m in Sources */,
+				10381EB61BF97B0F00E5E476 /* DrawImageViewController.m in Sources */,
+				1015418F1BF425A000E59437 /* ViewController.m in Sources */,
+				10381EB21BF96F7000E5E476 /* GradientColor.m in Sources */,
+				1015418C1BF425A000E59437 /* AppDelegate.m in Sources */,
+				10381EB91BF97B2900E5E476 /* DrawImageView.m in Sources */,
+				10381EA11BF963D900E5E476 /* StringAttribute.m in Sources */,
+				10381EA41BF963D900E5E476 /* NSMutableAttributedString+StringAttribute.m in Sources */,
+				101541B41BF48A5A00E59437 /* DrawLineView.m in Sources */,
+				101541A01BF425D000E59437 /* CGContextObject.m in Sources */,
+				10381EA31BF963D900E5E476 /* ForegroundColorAttribute.m in Sources */,
+				10381E901BF9626600E5E476 /* DrawStringView.m in Sources */,
+				10381EA21BF963D900E5E476 /* FontAttribute.m in Sources */,
+				10EF26A71BF48EFF00CF2A94 /* DrawRectViewController.m in Sources */,
+				101541B11BF4894500E59437 /* DrawLineViewController.m in Sources */,
+				101541891BF425A000E59437 /* main.m in Sources */,
+				101541A61BF4294000E59437 /* RGBColor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		101541901BF425A000E59437 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101541911BF425A000E59437 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		101541951BF425A000E59437 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				101541961BF425A000E59437 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		101541991BF425A000E59437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1015419A1BF425A000E59437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1015419C1BF425A000E59437 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CGContextObject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mc.TextCapital.CGContextObject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1015419D1BF425A000E59437 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CGContextObject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mc.TextCapital.CGContextObject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1015417F1BF425A000E59437 /* Build configuration list for PBXProject "CGContextObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				101541991BF425A000E59437 /* Debug */,
+				1015419A1BF425A000E59437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1015419B1BF425A000E59437 /* Build configuration list for PBXNativeTarget "CGContextObject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1015419C1BF425A000E59437 /* Debug */,
+				1015419D1BF425A000E59437 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1015417C1BF425A000E59437 /* Project object */;
+}
