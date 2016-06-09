@@ -167,3 +167,9 @@ The demo will demonstrate how to use it, enjoy it :)
 * 源码长期更新
 
 * 渐变色支持
+
+### BadgeValueView
+
+> 绘制Badge的view
+
+![demo1.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160609092931199-957602026.gif)
