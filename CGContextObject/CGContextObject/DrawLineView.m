@@ -41,13 +41,13 @@
     
     for (int row = 0; row <= widthSegment; row++) {
         
-        CGPoint   upPoint       = CGPointMake(row * gridWidth, arc4random() % (int)(height / 2.f));
-        NSString *upPointString = NSStringFromCGPoint(upPoint);
-        [upPoints addObject:upPointString];
+        CGPoint  upPoint      = CGPointMake(row * gridWidth, arc4random() % (int)(height / 2.f));
+        NSValue *upPointValue = [NSValue valueWithCGPoint:upPoint];
+        [upPoints addObject:upPointValue];
         
-        CGPoint   downPoint       = CGPointMake(row * gridWidth, arc4random() % (int)(height / 2.f) + (int)(height / 2.f));
-        NSString *downPointString = NSStringFromCGPoint(downPoint);
-        [downPoints addObject:downPointString];
+        CGPoint   downPoint     = CGPointMake(row * gridWidth, arc4random() % (int)(height / 2.f) + (int)(height / 2.f));
+        NSValue *downPointValue = [NSValue valueWithCGPoint:downPoint];
+        [downPoints addObject:downPointValue];
 
         // draw up point
         {
