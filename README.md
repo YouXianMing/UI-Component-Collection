@@ -173,3 +173,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 绘制Badge的view
 
 ![demo1.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160609092931199-957602026.gif)
+
+### IconEdgeInsetsLabel
+
+> 能添加图标的label
+
+![demo1.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160625104253938-1238321394.png)
