@@ -179,3 +179,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 能添加图标的label
 
 ![demo1.gif](http://images2015.cnblogs.com/blog/607542/201606/607542-20160625104253938-1238321394.png)
+
+### CollectionGridView
+
+> 定制通用的标签选择器
+
+![demo1.gif](http://images2015.cnblogs.com/blog/607542/201607/607542-20160717144659779-451454653.gif)
