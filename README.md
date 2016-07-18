@@ -185,3 +185,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 定制通用的标签选择器
 
 ![demo1.gif](http://images2015.cnblogs.com/blog/607542/201607/607542-20160717144659779-451454653.gif)
+
+### PlaceholderTextView
+
+> 带Placeholder的TextView
+
+![demo1.gif](http://images2015.cnblogs.com/blog/607542/201607/607542-20160718182312076-1280366787.gif)
