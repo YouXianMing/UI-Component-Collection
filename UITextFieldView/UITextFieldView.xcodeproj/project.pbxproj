@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C517331E1D45A194005D57AE /* TouchEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = C517331D1D45A194005D57AE /* TouchEventView.m */; };
 		C52C38301D42889A00B3199C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C382F1D42889A00B3199C /* main.m */; };
 		C52C38331D42889A00B3199C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C38321D42889A00B3199C /* AppDelegate.m */; };
 		C52C38361D42889A00B3199C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C38351D42889A00B3199C /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C517331C1D45A194005D57AE /* TouchEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchEventView.h; sourceTree = "<group>"; };
+		C517331D1D45A194005D57AE /* TouchEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchEventView.m; sourceTree = "<group>"; };
 		C52C382B1D42889A00B3199C /* UITextFieldView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITextFieldView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52C382F1D42889A00B3199C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C52C38311D42889A00B3199C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +83,8 @@
 				C52C38321D42889A00B3199C /* AppDelegate.m */,
 				C52C38341D42889A00B3199C /* ViewController.h */,
 				C52C38351D42889A00B3199C /* ViewController.m */,
+				C517331C1D45A194005D57AE /* TouchEventView.h */,
+				C517331D1D45A194005D57AE /* TouchEventView.m */,
 				C59611E61D44EFF90009435F /* UIAlertController+Constructor */,
 				C52C384F1D4288EF00B3199C /* UIView+SetRect.h */,
 				C52C38501D4288EF00B3199C /* UIView+SetRect.m */,
@@ -204,6 +209,7 @@
 				C52C38301D42889A00B3199C /* main.m in Sources */,
 				C52C38511D4288EF00B3199C /* UIView+SetRect.m in Sources */,
 				C59611E51D44EFF30009435F /* UIAlertAction+Constructor.m in Sources */,
+				C517331E1D45A194005D57AE /* TouchEventView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
