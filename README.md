@@ -191,3 +191,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 带Placeholder的TextView
 
 ![demo1.gif](http://images2015.cnblogs.com/blog/607542/201607/607542-20160718182312076-1280366787.gif)
+
+### [DrawRectObject](http://www.cnblogs.com/YouXianMing/p/5725482.html)
+
+> 精简DrawRect的使用
+
+![demo1.gif](http://images2015.cnblogs.com/blog/607542/201608/607542-20160801124147825-227855649.gif)
