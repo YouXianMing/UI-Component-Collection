@@ -18,6 +18,8 @@
 		C52C384C1D4288AA00B3199C /* TextFieldValidatorMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C38481D4288AA00B3199C /* TextFieldValidatorMessage.m */; };
 		C52C384D1D4288AA00B3199C /* AbsTextFieldViewValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C384A1D4288AA00B3199C /* AbsTextFieldViewValidator.m */; };
 		C52C38511D4288EF00B3199C /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C52C38501D4288EF00B3199C /* UIView+SetRect.m */; };
+		C57527081D50AAF00064F6CD /* PasswordValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C57527071D50AAF00064F6CD /* PasswordValidator.m */; };
+		C575270B1D50AB070064F6CD /* PhoneValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = C575270A1D50AB070064F6CD /* PhoneValidator.m */; };
 		C59611E41D44EFF30009435F /* UIAlertController+Constructor.m in Sources */ = {isa = PBXBuildFile; fileRef = C59611E11D44EFF30009435F /* UIAlertController+Constructor.m */; };
 		C59611E51D44EFF30009435F /* UIAlertAction+Constructor.m in Sources */ = {isa = PBXBuildFile; fileRef = C59611E31D44EFF30009435F /* UIAlertAction+Constructor.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,11 @@
 		C52C384A1D4288AA00B3199C /* AbsTextFieldViewValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbsTextFieldViewValidator.m; sourceTree = "<group>"; };
 		C52C384F1D4288EF00B3199C /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
 		C52C38501D4288EF00B3199C /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		C57527051D50A77E0064F6CD /* AccessViewTagProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccessViewTagProtocol.h; sourceTree = "<group>"; };
+		C57527061D50AAF00064F6CD /* PasswordValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordValidator.h; sourceTree = "<group>"; };
+		C57527071D50AAF00064F6CD /* PasswordValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordValidator.m; sourceTree = "<group>"; };
+		C57527091D50AB070064F6CD /* PhoneValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneValidator.h; sourceTree = "<group>"; };
+		C575270A1D50AB070064F6CD /* PhoneValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneValidator.m; sourceTree = "<group>"; };
 		C59611E01D44EFF30009435F /* UIAlertController+Constructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Constructor.h"; sourceTree = "<group>"; };
 		C59611E11D44EFF30009435F /* UIAlertController+Constructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Constructor.m"; sourceTree = "<group>"; };
 		C59611E21D44EFF30009435F /* UIAlertAction+Constructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertAction+Constructor.h"; sourceTree = "<group>"; };
@@ -83,11 +90,7 @@
 				C52C38321D42889A00B3199C /* AppDelegate.m */,
 				C52C38341D42889A00B3199C /* ViewController.h */,
 				C52C38351D42889A00B3199C /* ViewController.m */,
-				C517331C1D45A194005D57AE /* TouchEventView.h */,
-				C517331D1D45A194005D57AE /* TouchEventView.m */,
-				C59611E61D44EFF90009435F /* UIAlertController+Constructor */,
-				C52C384F1D4288EF00B3199C /* UIView+SetRect.h */,
-				C52C38501D4288EF00B3199C /* UIView+SetRect.m */,
+				C575270C1D50AB0F0064F6CD /* 验证器 */,
 				C52C384E1D4288B300B3199C /* UITextFieldView */,
 				C52C38371D42889A00B3199C /* Main.storyboard */,
 				C52C383A1D42889A00B3199C /* Assets.xcassets */,
@@ -101,6 +104,12 @@
 		C52C382E1D42889A00B3199C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C57527051D50A77E0064F6CD /* AccessViewTagProtocol.h */,
+				C517331C1D45A194005D57AE /* TouchEventView.h */,
+				C517331D1D45A194005D57AE /* TouchEventView.m */,
+				C52C384F1D4288EF00B3199C /* UIView+SetRect.h */,
+				C52C38501D4288EF00B3199C /* UIView+SetRect.m */,
+				C59611E61D44EFF90009435F /* UIAlertController+Constructor */,
 				C52C382F1D42889A00B3199C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -117,6 +126,17 @@
 				C52C384A1D4288AA00B3199C /* AbsTextFieldViewValidator.m */,
 			);
 			name = UITextFieldView;
+			sourceTree = "<group>";
+		};
+		C575270C1D50AB0F0064F6CD /* 验证器 */ = {
+			isa = PBXGroup;
+			children = (
+				C57527061D50AAF00064F6CD /* PasswordValidator.h */,
+				C57527071D50AAF00064F6CD /* PasswordValidator.m */,
+				C57527091D50AB070064F6CD /* PhoneValidator.h */,
+				C575270A1D50AB070064F6CD /* PhoneValidator.m */,
+			);
+			name = "验证器";
 			sourceTree = "<group>";
 		};
 		C59611E61D44EFF90009435F /* UIAlertController+Constructor */ = {
@@ -203,9 +223,11 @@
 				C52C38361D42889A00B3199C /* ViewController.m in Sources */,
 				C52C38331D42889A00B3199C /* AppDelegate.m in Sources */,
 				C52C384D1D4288AA00B3199C /* AbsTextFieldViewValidator.m in Sources */,
+				C575270B1D50AB070064F6CD /* PhoneValidator.m in Sources */,
 				C52C384B1D4288AA00B3199C /* UITextFieldView.m in Sources */,
 				C52C384C1D4288AA00B3199C /* TextFieldValidatorMessage.m in Sources */,
 				C59611E41D44EFF30009435F /* UIAlertController+Constructor.m in Sources */,
+				C57527081D50AAF00064F6CD /* PasswordValidator.m in Sources */,
 				C52C38301D42889A00B3199C /* main.m in Sources */,
 				C52C38511D4288EF00B3199C /* UIView+SetRect.m in Sources */,
 				C59611E51D44EFF30009435F /* UIAlertAction+Constructor.m in Sources */,

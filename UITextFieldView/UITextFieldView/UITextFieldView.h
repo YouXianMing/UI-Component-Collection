@@ -203,10 +203,6 @@ typedef BOOL (^textFieldShouldReturn_t)(UITextFieldView *textFieldView);
  */
 - (CGRect)rectFromView:(UIView *)view;
 
-#pragma mark - Constructor method.
-
-//- (instancetype)
-
 @end
 
 

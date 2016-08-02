@@ -22,8 +22,9 @@
     
     if (self = [super initWithFrame:frame]) {
     
-        self.textField          = [[UITextField alloc] initWithFrame:self.bounds];
-        self.textField.delegate = self;
+        self.textField              = [[UITextField alloc] initWithFrame:self.bounds];
+        self.textField.delegate     = self;
+        self.textFieldViewValidator = [AbsTextFieldViewValidator new];
         [self addSubview:self.textField];
     }
     
@@ -173,6 +174,17 @@
     
         return YES;
     }
+}
+
+- (void)dealloc {
+
+    self.shouldBeginEditingBlock            = nil;
+    self.didBeginEditingBlock               = nil;
+    self.shouldEndEditingBlock              = nil;
+    self.didEndEditingBlock                 = nil;
+    self.shouldChangeCharactersInRangeBlock = nil;
+    self.shouldClearBlock                   = nil;
+    self.shouldReturnBlock                  = nil;
 }
 
 @end
