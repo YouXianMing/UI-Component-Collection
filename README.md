@@ -197,3 +197,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 精简DrawRect的使用
 
 ![demo1.gif](http://images2015.cnblogs.com/blog/607542/201608/607542-20160801124147825-227855649.gif)
+
+### FBGlowLabel
+
+> 支持辉光效果的Label
+
+![demo1.png](http://images2015.cnblogs.com/blog/607542/201608/607542-20160803190902262-1247151516.png)
