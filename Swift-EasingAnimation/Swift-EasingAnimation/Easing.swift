@@ -166,10 +166,10 @@ enum EasingFunction: Int {
 }
 
 class Easing: NSObject {
-
+    
     // MARK: Linear interpolation (no easing)
     class func LinearInterpolation(p : Double) -> Double {
-    
+        
         return p
     }
     
@@ -245,7 +245,7 @@ class Easing: NSObject {
             return -8 * f * f * f * f + 1
         }
     }
-
+    
     // MARK: Quintic easing; p^5
     class func QuinticEaseIn(p : Double) -> Double {
         
@@ -286,7 +286,7 @@ class Easing: NSObject {
         
         return 0.5 * (1 - cos(p * M_PI))
     }
-
+    
     // MARK: Circular easing; sqrt(1 - p^2)
     class func CircularEaseIn(p : Double) -> Double {
         
@@ -309,7 +309,7 @@ class Easing: NSObject {
             return 0.5 * (sqrt(-((2 * p) - 3) * ((2 * p) - 1)) + 1)
         }
     }
-
+    
     // MARK: Exponential easing, base 2
     class func ExponentialEaseIn(p : Double) -> Double {
         
@@ -360,7 +360,7 @@ class Easing: NSObject {
             return 0.5 * (sin(-13 * M_PI_2 * ((2 * p - 1) + 1)) * pow(2, -10 * (2 * p - 1)) + 2)
         }
     }
-
+    
     // MARK: Overshooting cubic easing
     class func BackEaseIn(p : Double) -> Double {
         
@@ -387,7 +387,7 @@ class Easing: NSObject {
             return 0.5 * (1 - tmp) + 0.5
         }
     }
-
+    
     // MARK: Exponentially-decaying bounce easing
     class func BounceEaseIn(p : Double) -> Double {
         

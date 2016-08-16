@@ -54,12 +54,14 @@ class EasingValue: NSObject {
         var t  : Double = 0.0
         let dt : Double = 1.0 / (Double(frameCount) - 1)
         
-        for var i = 0; i < frameCount; ++i, t += dt {
+        for _ in 0 ..< frameCount {
             
             let value = fromValue + (function.value())(t) * (toValue - fromValue)
             values.addObject(value)
+            
+            t += dt
         }
-        
+
         return values as [AnyObject]
     }
     
@@ -78,12 +80,14 @@ class EasingValue: NSObject {
         var t  : Double = 0.0
         let dt : Double = 1.0 / (Double(frameCount) - 1)
         
-        for var i = 0; i < frameCount; ++i, t += dt {
+        for _ in 0 ..< frameCount {
             
             let x     : Double  = Double(fromPoint.x) + (function.value())(t) * (Double(toPoint.x) - Double(fromPoint.x))
             let y     : Double  = Double(fromPoint.y) + (function.value())(t) * (Double(toPoint.y) - Double(fromPoint.y))
             let point : CGPoint = CGPoint(x : x, y : y)
             values.addObject(NSValue(CGPoint: point))
+            
+            t += dt
         }
         
         return values as [AnyObject]
@@ -104,12 +108,14 @@ class EasingValue: NSObject {
         var t  : Double = 0.0
         let dt : Double = 1.0 / (Double(frameCount) - 1)
         
-        for var i = 0; i < frameCount; ++i, t += dt {
+        for _ in 0 ..< frameCount {
             
             let width  : Double = Double(fromSize.width)  + (function.value())(t) * (Double(toSize.width) - Double(fromSize.width))
             let height : Double = Double(fromSize.height) + (function.value())(t) * (Double(toSize.height) - Double(fromSize.height))
             let size   : CGSize = CGSize(width: width, height: height)
             values.addObject(NSValue(CGSize : size))
+            
+            t += dt
         }
         
         return values as [AnyObject]

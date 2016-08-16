@@ -52,12 +52,14 @@ class ComplexEasingValue: EasingValue {
         var t  : Double = 0.0
         let dt : Double = 1.0 / (Double(frameCount) - 1)
         
-        for var i = 0; i < frameCount; ++i, t += dt {
+        for _ in 0 ..< frameCount {
             
             let x     : Double  = Double(fromPoint.x) + (functionA.value())(t) * (Double(toPoint.x) - Double(fromPoint.x))
             let y     : Double  = Double(fromPoint.y) + (functionB.value())(t) * (Double(toPoint.y) - Double(fromPoint.y))
             let point : CGPoint = CGPoint(x : x, y : y)
             values.addObject(NSValue(CGPoint: point))
+            
+            t += dt
         }
         
         return values as [AnyObject]
@@ -78,12 +80,14 @@ class ComplexEasingValue: EasingValue {
         var t  : Double = 0.0
         let dt : Double = 1.0 / (Double(frameCount) - 1)
         
-        for var i = 0; i < frameCount; ++i, t += dt {
+        for _ in 0 ..< frameCount {
             
             let width  : Double = Double(fromSize.width)  + (functionA.value())(t) * (Double(toSize.width) - Double(fromSize.width))
             let height : Double = Double(fromSize.height) + (functionB.value())(t) * (Double(toSize.height) - Double(fromSize.height))
             let size   : CGSize = CGSize(width: width, height: height)
             values.addObject(NSValue(CGSize : size))
+            
+            t += dt
         }
         
         return values as [AnyObject]

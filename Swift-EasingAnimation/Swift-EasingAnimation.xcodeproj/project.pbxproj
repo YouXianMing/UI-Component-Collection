@@ -270,7 +270,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift-EasingAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mc.TextCapital.Swift-EasingAnimation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YouXianMing.Swift-EasingAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -284,7 +284,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Swift-EasingAnimation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "mc.TextCapital.Swift-EasingAnimation";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.YouXianMing.Swift-EasingAnimation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
