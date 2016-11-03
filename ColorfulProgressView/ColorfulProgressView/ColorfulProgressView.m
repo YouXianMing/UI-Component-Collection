@@ -8,7 +8,7 @@
 
 #import "ColorfulProgressView.h"
 
-@interface ColorfulProgressView () {
+@interface ColorfulProgressView () <CAAnimationDelegate> {
 
     /**
      *  当前view宽度

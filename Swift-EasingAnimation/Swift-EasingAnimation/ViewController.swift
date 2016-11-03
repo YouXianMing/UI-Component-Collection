@@ -29,7 +29,7 @@ class ViewController: UIViewController {
     func frameValueAnimation() {
     
         // 创建easing
-        let easingValue = EasingValue(withFunction: .ElasticEaseInOut, frameCount: 120)
+        let easingValue = EasingValue(withFunction: .elasticEaseInOut, frameCount: 120)
         
         // 创建关键帧动画
         let keyframeAnimation      = CAKeyframeAnimation(keyPath: "transform.rotation.z")
@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         layer.frame       = CGRect(x: 60, y: 60, width: 100, height: 100)
         layer.borderWidth = 1
         layer.transform   = CATransform3DMakeRotation(CGFloat(M_PI), 0, 0, 1)
-        layer.addAnimation(keyframeAnimation, forKey: nil)
+        layer.add(keyframeAnimation, forKey: nil)
         view.layer.addSublayer(layer)
     }
     
@@ -56,7 +56,7 @@ class ViewController: UIViewController {
         layer.borderWidth = 1
         
         // 创建easing
-        let easingValue = ComplexEasingValue(withFunctionA: .LinearInterpolation, FunctionB: .BounceEaseOut, frameCount: 120)
+        let easingValue = ComplexEasingValue(withFunctionA: .linearInterpolation, FunctionB: .bounceEaseOut, frameCount: 120)
         
         // 创建关键帧动画
         let keyframeAnimation      = CAKeyframeAnimation(keyPath: "position")
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         layer.position             = view.center
         
         // 执行动画
-        layer.addAnimation(keyframeAnimation, forKey: nil)
+        layer.add(keyframeAnimation, forKey: nil)
         view.layer.addSublayer(layer)
     }
     
@@ -77,10 +77,10 @@ class ViewController: UIViewController {
         // 创建layer
         let layer             = CALayer()
         layer.frame           = CGRect(x: 60, y: 60, width: 100, height: 100)
-        layer.backgroundColor = UIColor.redColor().colorWithAlphaComponent(0.5).CGColor
+        layer.backgroundColor = UIColor.red.withAlphaComponent(0.5).cgColor
         
         // 创建easing
-        let easingValue = EasingValue(withFunction: .ElasticEaseInOut, frameCount: 120)
+        let easingValue = EasingValue(withFunction: .elasticEaseInOut, frameCount: 120)
         
         // 创建关键帧动画
         let keyframeAnimation      = CAKeyframeAnimation(keyPath: "bounds.size")
@@ -89,7 +89,7 @@ class ViewController: UIViewController {
         layer.bounds.size          = CGSize(width: 150, height: 150)
         
         // 执行动画
-        layer.addAnimation(keyframeAnimation, forKey: nil)
+        layer.add(keyframeAnimation, forKey: nil)
         view.layer.addSublayer(layer)
     }
 }

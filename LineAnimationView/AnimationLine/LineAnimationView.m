@@ -8,7 +8,7 @@
 
 #import "LineAnimationView.h"
 
-@interface LineAnimationView ()
+@interface LineAnimationView () <CAAnimationDelegate>
 
 @property (nonatomic, strong) UIView      *contentView;
 @property (nonatomic, strong) UIImageView *leftImageView;
