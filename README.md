@@ -203,3 +203,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 支持辉光效果的Label
 
 ![demo1.png](http://images2015.cnblogs.com/blog/607542/201608/607542-20160803190902262-1247151516.png)
+
+### SDWebImageViewPlaceHorder
+
+> 用SDWebImage渐变加载图片
+
+![demo1.png](http://images2015.cnblogs.com/blog/607542/201611/607542-20161104142657768-1283049319.gif)
