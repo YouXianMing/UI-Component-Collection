@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C56811F41D75578C006E6C49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C56811F31D75578C006E6C49 /* main.m */; };
+		C56811F71D75578C006E6C49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C56811F61D75578C006E6C49 /* AppDelegate.m */; };
+		C56811FA1D75578C006E6C49 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C56811F91D75578C006E6C49 /* ViewController.m */; };
+		C56811FD1D75578C006E6C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56811FB1D75578C006E6C49 /* Main.storyboard */; };
+		C56811FF1D75578C006E6C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C56811FE1D75578C006E6C49 /* Assets.xcassets */; };
+		C56812021D75578C006E6C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C56812001D75578C006E6C49 /* LaunchScreen.storyboard */; };
+		C568120B1D75588A006E6C49 /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = C568120A1D75588A006E6C49 /* UIView+SetRect.m */; };
+		C56812171D756185006E6C49 /* MaximumSpacingFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C56812161D756185006E6C49 /* MaximumSpacingFlowLayout.m */; };
+		C568121A1D7561DC006E6C49 /* IrregularGridCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C56812191D7561DC006E6C49 /* IrregularGridCollectionView.m */; };
+		C568121E1D756337006E6C49 /* CustomIrregularGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C568121D1D756337006E6C49 /* CustomIrregularGridViewCell.m */; };
+		C56812211D756377006E6C49 /* IrregularGridCellDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C56812201D756377006E6C49 /* IrregularGridCellDataAdapter.m */; };
+		C5A0AED21DD01CF200C43A24 /* yellow_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AED01DD01CF200C43A24 /* yellow_nor@2x.png */; };
+		C5A0AED31DD01CF200C43A24 /* red_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AED11DD01CF200C43A24 /* red_nor@2x.png */; };
+		C5A0AED61DD01D3F00C43A24 /* RedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0AED51DD01D3F00C43A24 /* RedButtonCell.m */; };
+		C5A0AED91DD01D5B00C43A24 /* YellowButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0AED81DD01D5B00C43A24 /* YellowButtonCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C56811EF1D75578C006E6C49 /* IrregularGridCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IrregularGridCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C56811F31D75578C006E6C49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C56811F51D75578C006E6C49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C56811F61D75578C006E6C49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C56811F81D75578C006E6C49 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C56811F91D75578C006E6C49 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C56811FC1D75578C006E6C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C56811FE1D75578C006E6C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C56812011D75578C006E6C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C56812031D75578C006E6C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C56812091D75588A006E6C49 /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
+		C568120A1D75588A006E6C49 /* UIView+SetRect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SetRect.m"; sourceTree = "<group>"; };
+		C56812151D756185006E6C49 /* MaximumSpacingFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaximumSpacingFlowLayout.h; sourceTree = "<group>"; };
+		C56812161D756185006E6C49 /* MaximumSpacingFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaximumSpacingFlowLayout.m; sourceTree = "<group>"; };
+		C56812181D7561DC006E6C49 /* IrregularGridCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrregularGridCollectionView.h; sourceTree = "<group>"; };
+		C56812191D7561DC006E6C49 /* IrregularGridCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrregularGridCollectionView.m; sourceTree = "<group>"; };
+		C568121C1D756337006E6C49 /* CustomIrregularGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIrregularGridViewCell.h; sourceTree = "<group>"; };
+		C568121D1D756337006E6C49 /* CustomIrregularGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIrregularGridViewCell.m; sourceTree = "<group>"; };
+		C568121F1D756377006E6C49 /* IrregularGridCellDataAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IrregularGridCellDataAdapter.h; sourceTree = "<group>"; };
+		C56812201D756377006E6C49 /* IrregularGridCellDataAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IrregularGridCellDataAdapter.m; sourceTree = "<group>"; };
+		C5A0AED01DD01CF200C43A24 /* yellow_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yellow_nor@2x.png"; sourceTree = "<group>"; };
+		C5A0AED11DD01CF200C43A24 /* red_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_nor@2x.png"; sourceTree = "<group>"; };
+		C5A0AED41DD01D3F00C43A24 /* RedButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RedButtonCell.h; sourceTree = "<group>"; };
+		C5A0AED51DD01D3F00C43A24 /* RedButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedButtonCell.m; sourceTree = "<group>"; };
+		C5A0AED71DD01D5B00C43A24 /* YellowButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowButtonCell.h; sourceTree = "<group>"; };
+		C5A0AED81DD01D5B00C43A24 /* YellowButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowButtonCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C56811EC1D75578C006E6C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C56811E61D75578C006E6C49 = {
+			isa = PBXGroup;
+			children = (
+				C56811F11D75578C006E6C49 /* IrregularGridCollectionView */,
+				C56811F01D75578C006E6C49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C56811F01D75578C006E6C49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C56811EF1D75578C006E6C49 /* IrregularGridCollectionView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C56811F11D75578C006E6C49 /* IrregularGridCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C56811F51D75578C006E6C49 /* AppDelegate.h */,
+				C56811F61D75578C006E6C49 /* AppDelegate.m */,
+				C56811F81D75578C006E6C49 /* ViewController.h */,
+				C56811F91D75578C006E6C49 /* ViewController.m */,
+				C5A0AED41DD01D3F00C43A24 /* RedButtonCell.h */,
+				C5A0AED51DD01D3F00C43A24 /* RedButtonCell.m */,
+				C5A0AED71DD01D5B00C43A24 /* YellowButtonCell.h */,
+				C5A0AED81DD01D5B00C43A24 /* YellowButtonCell.m */,
+				C568121B1D7561E5006E6C49 /* IrregularGridCollectionView */,
+				C56811F21D75578C006E6C49 /* Supporting Files */,
+			);
+			path = IrregularGridCollectionView;
+			sourceTree = "<group>";
+		};
+		C56811F21D75578C006E6C49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C56811FB1D75578C006E6C49 /* Main.storyboard */,
+				C56811FE1D75578C006E6C49 /* Assets.xcassets */,
+				C56812001D75578C006E6C49 /* LaunchScreen.storyboard */,
+				C56812031D75578C006E6C49 /* Info.plist */,
+				C56812091D75588A006E6C49 /* UIView+SetRect.h */,
+				C568120A1D75588A006E6C49 /* UIView+SetRect.m */,
+				C5A0AED01DD01CF200C43A24 /* yellow_nor@2x.png */,
+				C5A0AED11DD01CF200C43A24 /* red_nor@2x.png */,
+				C56811F31D75578C006E6C49 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C568121B1D7561E5006E6C49 /* IrregularGridCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				C56812181D7561DC006E6C49 /* IrregularGridCollectionView.h */,
+				C56812191D7561DC006E6C49 /* IrregularGridCollectionView.m */,
+				C56812151D756185006E6C49 /* MaximumSpacingFlowLayout.h */,
+				C56812161D756185006E6C49 /* MaximumSpacingFlowLayout.m */,
+				C568121C1D756337006E6C49 /* CustomIrregularGridViewCell.h */,
+				C568121D1D756337006E6C49 /* CustomIrregularGridViewCell.m */,
+				C568121F1D756377006E6C49 /* IrregularGridCellDataAdapter.h */,
+				C56812201D756377006E6C49 /* IrregularGridCellDataAdapter.m */,
+			);
+			name = IrregularGridCollectionView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C56811EE1D75578C006E6C49 /* IrregularGridCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C56812061D75578C006E6C49 /* Build configuration list for PBXNativeTarget "IrregularGridCollectionView" */;
+			buildPhases = (
+				C56811EB1D75578C006E6C49 /* Sources */,
+				C56811EC1D75578C006E6C49 /* Frameworks */,
+				C56811ED1D75578C006E6C49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IrregularGridCollectionView;
+			productName = IrregularGridCollectionView;
+			productReference = C56811EF1D75578C006E6C49 /* IrregularGridCollectionView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C56811E71D75578C006E6C49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = YouXianMing;
+				TargetAttributes = {
+					C56811EE1D75578C006E6C49 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = HT95VAK372;
+					};
+				};
+			};
+			buildConfigurationList = C56811EA1D75578C006E6C49 /* Build configuration list for PBXProject "IrregularGridCollectionView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C56811E61D75578C006E6C49;
+			productRefGroup = C56811F01D75578C006E6C49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C56811EE1D75578C006E6C49 /* IrregularGridCollectionView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C56811ED1D75578C006E6C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56812021D75578C006E6C49 /* LaunchScreen.storyboard in Resources */,
+				C56811FF1D75578C006E6C49 /* Assets.xcassets in Resources */,
+				C56811FD1D75578C006E6C49 /* Main.storyboard in Resources */,
+				C5A0AED31DD01CF200C43A24 /* red_nor@2x.png in Resources */,
+				C5A0AED21DD01CF200C43A24 /* yellow_nor@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C56811EB1D75578C006E6C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C56811FA1D75578C006E6C49 /* ViewController.m in Sources */,
+				C568120B1D75588A006E6C49 /* UIView+SetRect.m in Sources */,
+				C56811F71D75578C006E6C49 /* AppDelegate.m in Sources */,
+				C568121E1D756337006E6C49 /* CustomIrregularGridViewCell.m in Sources */,
+				C56812211D756377006E6C49 /* IrregularGridCellDataAdapter.m in Sources */,
+				C568121A1D7561DC006E6C49 /* IrregularGridCollectionView.m in Sources */,
+				C56811F41D75578C006E6C49 /* main.m in Sources */,
+				C5A0AED91DD01D5B00C43A24 /* YellowButtonCell.m in Sources */,
+				C5A0AED61DD01D3F00C43A24 /* RedButtonCell.m in Sources */,
+				C56812171D756185006E6C49 /* MaximumSpacingFlowLayout.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C56811FB1D75578C006E6C49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56811FC1D75578C006E6C49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C56812001D75578C006E6C49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C56812011D75578C006E6C49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C56812041D75578C006E6C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C56812051D75578C006E6C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C56812071D75578C006E6C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HT95VAK372;
+				INFOPLIST_FILE = IrregularGridCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXianMing.IrregularGridCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C56812081D75578C006E6C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HT95VAK372;
+				INFOPLIST_FILE = IrregularGridCollectionView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YouXianMing.IrregularGridCollectionView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C56811EA1D75578C006E6C49 /* Build configuration list for PBXProject "IrregularGridCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56812041D75578C006E6C49 /* Debug */,
+				C56812051D75578C006E6C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C56812061D75578C006E6C49 /* Build configuration list for PBXNativeTarget "IrregularGridCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C56812071D75578C006E6C49 /* Debug */,
+				C56812081D75578C006E6C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C56811E71D75578C006E6C49 /* Project object */;
+}
