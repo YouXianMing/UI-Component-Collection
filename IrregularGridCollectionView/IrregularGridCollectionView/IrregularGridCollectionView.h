@@ -41,6 +41,11 @@
 @property (nonatomic, strong, readonly) UICollectionView *collectionView;
 
 /**
+ *  The scroll direction of the grid, default is UICollectionViewScrollDirectionVertical.
+ */
+@property (nonatomic) UICollectionViewScrollDirection scrollDirection;
+
+/**
  *  Content edgeInsets, default is UIEdgeInsetsMake(5, 5, 5, 5).
  */
 @property (nonatomic) UIEdgeInsets contentEdgeInsets;
@@ -90,6 +95,7 @@
 + (instancetype)irregularGridCollectionViewWithFrame:(CGRect)frame
                                             delegate:(id <IrregularGridCollectionViewDelegate>)delegate
                                        registerCells:(NSArray <IrregularGridViewCellClassType *> *)registerCells
+                                     scrollDirection:(UICollectionViewScrollDirection)scrollDirection
                                    contentEdgeInsets:(UIEdgeInsets)edgeInsets
                                          verticalGap:(CGFloat)verticalGap
                                        horizontalGap:(CGFloat)horizontalGap

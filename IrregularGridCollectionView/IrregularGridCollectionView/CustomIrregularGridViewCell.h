@@ -29,7 +29,8 @@
 @property (nonatomic, weak) IrregularGridCollectionView             *collectionGridView;
 
 /**
- *  Selected event, you can override by subclass, you should manual call this method to make the IrregularGridCollectionView selected event effective.
+ *  Selected event, you can override by subclass, you should manual call this 
+ *  method to make the IrregularGridCollectionView selected event effective.
  */
 - (void)selectedEvent;
 

@@ -35,6 +35,7 @@
         self.horizontalGap       = 5.f;
         self.verticalGap         = 5.f;
         self.gridHeight          = 20.f;
+        self.scrollDirection     = UICollectionViewScrollDirectionVertical;
         
         // Init UICollectionViewFlowLayout.
         self.flowLayout = [[MaximumSpacingFlowLayout alloc] init];
@@ -57,6 +58,7 @@
     self.collectionView.contentInset        = self.contentEdgeInsets;
     self.flowLayout.minimumLineSpacing      = self.verticalGap;
     self.flowLayout.minimumInteritemSpacing = self.horizontalGap;
+    self.flowLayout.scrollDirection         = self.scrollDirection;
 }
 
 #pragma mark - UICollectionView's delegate & data source.
@@ -92,6 +94,7 @@
 + (instancetype)irregularGridCollectionViewWithFrame:(CGRect)frame
                                             delegate:(id <IrregularGridCollectionViewDelegate>)delegate
                                        registerCells:(NSArray <IrregularGridViewCellClassType *> *)registerCells
+                                     scrollDirection:(UICollectionViewScrollDirection)scrollDirection
                                    contentEdgeInsets:(UIEdgeInsets)edgeInsets
                                          verticalGap:(CGFloat)verticalGap
                                        horizontalGap:(CGFloat)horizontalGap
@@ -100,6 +103,7 @@
     IrregularGridCollectionView *irregularGridView = [[[self class] alloc] initWithFrame:frame];
     irregularGridView.delegate                     = delegate;
     irregularGridView.contentEdgeInsets            = edgeInsets;
+    irregularGridView.scrollDirection              = scrollDirection;
     irregularGridView.verticalGap                  = verticalGap;
     irregularGridView.horizontalGap                = horizontalGap;
     irregularGridView.gridHeight                   = gridHeight;

@@ -22,6 +22,12 @@
 		C5A0AED31DD01CF200C43A24 /* red_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AED11DD01CF200C43A24 /* red_nor@2x.png */; };
 		C5A0AED61DD01D3F00C43A24 /* RedButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0AED51DD01D3F00C43A24 /* RedButtonCell.m */; };
 		C5A0AED91DD01D5B00C43A24 /* YellowButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0AED81DD01D5B00C43A24 /* YellowButtonCell.m */; };
+		C5A0AEDE1DD053B200C43A24 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AEDA1DD053B200C43A24 /* 1.jpg */; };
+		C5A0AEDF1DD053B200C43A24 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AEDB1DD053B200C43A24 /* 2.jpg */; };
+		C5A0AEE01DD053B200C43A24 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AEDC1DD053B200C43A24 /* 3.jpg */; };
+		C5A0AEE11DD053B200C43A24 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A0AEDD1DD053B200C43A24 /* 4.jpg */; };
+		C5A0AEE41DD053CB00C43A24 /* Math.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0AEE31DD053CB00C43A24 /* Math.m */; };
+		C5A0AEE71DD054B500C43A24 /* PictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A0AEE61DD054B500C43A24 /* PictureCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +57,14 @@
 		C5A0AED51DD01D3F00C43A24 /* RedButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RedButtonCell.m; sourceTree = "<group>"; };
 		C5A0AED71DD01D5B00C43A24 /* YellowButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YellowButtonCell.h; sourceTree = "<group>"; };
 		C5A0AED81DD01D5B00C43A24 /* YellowButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YellowButtonCell.m; sourceTree = "<group>"; };
+		C5A0AEDA1DD053B200C43A24 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C5A0AEDB1DD053B200C43A24 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C5A0AEDC1DD053B200C43A24 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		C5A0AEDD1DD053B200C43A24 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		C5A0AEE21DD053CB00C43A24 /* Math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Math.h; sourceTree = "<group>"; };
+		C5A0AEE31DD053CB00C43A24 /* Math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Math.m; sourceTree = "<group>"; };
+		C5A0AEE51DD054B500C43A24 /* PictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCell.h; sourceTree = "<group>"; };
+		C5A0AEE61DD054B500C43A24 /* PictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +101,8 @@
 				C56811F61D75578C006E6C49 /* AppDelegate.m */,
 				C56811F81D75578C006E6C49 /* ViewController.h */,
 				C56811F91D75578C006E6C49 /* ViewController.m */,
+				C5A0AEE51DD054B500C43A24 /* PictureCell.h */,
+				C5A0AEE61DD054B500C43A24 /* PictureCell.m */,
 				C5A0AED41DD01D3F00C43A24 /* RedButtonCell.h */,
 				C5A0AED51DD01D3F00C43A24 /* RedButtonCell.m */,
 				C5A0AED71DD01D5B00C43A24 /* YellowButtonCell.h */,
@@ -100,6 +116,12 @@
 		C56811F21D75578C006E6C49 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5A0AEE21DD053CB00C43A24 /* Math.h */,
+				C5A0AEE31DD053CB00C43A24 /* Math.m */,
+				C5A0AEDA1DD053B200C43A24 /* 1.jpg */,
+				C5A0AEDB1DD053B200C43A24 /* 2.jpg */,
+				C5A0AEDC1DD053B200C43A24 /* 3.jpg */,
+				C5A0AEDD1DD053B200C43A24 /* 4.jpg */,
 				C56811FB1D75578C006E6C49 /* Main.storyboard */,
 				C56811FE1D75578C006E6C49 /* Assets.xcassets */,
 				C56812001D75578C006E6C49 /* LaunchScreen.storyboard */,
@@ -188,9 +210,13 @@
 			files = (
 				C56812021D75578C006E6C49 /* LaunchScreen.storyboard in Resources */,
 				C56811FF1D75578C006E6C49 /* Assets.xcassets in Resources */,
+				C5A0AEDF1DD053B200C43A24 /* 2.jpg in Resources */,
 				C56811FD1D75578C006E6C49 /* Main.storyboard in Resources */,
+				C5A0AEDE1DD053B200C43A24 /* 1.jpg in Resources */,
 				C5A0AED31DD01CF200C43A24 /* red_nor@2x.png in Resources */,
+				C5A0AEE11DD053B200C43A24 /* 4.jpg in Resources */,
 				C5A0AED21DD01CF200C43A24 /* yellow_nor@2x.png in Resources */,
+				C5A0AEE01DD053B200C43A24 /* 3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,11 +227,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A0AEE71DD054B500C43A24 /* PictureCell.m in Sources */,
 				C56811FA1D75578C006E6C49 /* ViewController.m in Sources */,
 				C568120B1D75588A006E6C49 /* UIView+SetRect.m in Sources */,
 				C56811F71D75578C006E6C49 /* AppDelegate.m in Sources */,
 				C568121E1D756337006E6C49 /* CustomIrregularGridViewCell.m in Sources */,
 				C56812211D756377006E6C49 /* IrregularGridCellDataAdapter.m in Sources */,
+				C5A0AEE41DD053CB00C43A24 /* Math.m in Sources */,
 				C568121A1D7561DC006E6C49 /* IrregularGridCollectionView.m in Sources */,
 				C56811F41D75578C006E6C49 /* main.m in Sources */,
 				C5A0AED91DD01D5B00C43A24 /* YellowButtonCell.m in Sources */,
