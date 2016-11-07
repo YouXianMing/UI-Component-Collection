@@ -116,7 +116,7 @@ NS_INLINE IrregularGridViewCellClassType *gridViewCellClassType(Class className,
     
     IrregularGridViewCellClassType *type = [IrregularGridViewCellClassType new];
     type.className                        = className;
-    type.reuseIdentifier                  = reuseIdentifier;
+    type.reuseIdentifier                  = reuseIdentifier.length ? reuseIdentifier : NSStringFromClass(className);
     
     return type;
 }

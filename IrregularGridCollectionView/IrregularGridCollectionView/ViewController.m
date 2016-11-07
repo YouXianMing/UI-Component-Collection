@@ -55,7 +55,7 @@ typedef enum : NSUInteger {
     CGFloat height    = 10 + 100 + 10; // EdgeInsetTop + GridHeight + EdgeInsetBottom
     irregularGridView = [IrregularGridCollectionView irregularGridCollectionViewWithFrame:CGRectMake(0, 20, Width, height)
                                                                                  delegate:self
-                                                                            registerCells:@[gridViewCellClassType([PictureCell class], @"PictureCell")]
+                                                                            registerCells:@[gridViewCellClassType([PictureCell class], nil)]
                                                                           scrollDirection:UICollectionViewScrollDirectionHorizontal
                                                                         contentEdgeInsets:UIEdgeInsetsMake(10, 10, 10, 10)
                                                                               verticalGap:10.f
@@ -65,7 +65,7 @@ typedef enum : NSUInteger {
     irregularGridView.adapters = arrays;
     [self.view addSubview:irregularGridView];
     
-    // Debug.
+    // Debug frame.
     if (/* DISABLES CODE */ (1)) {
         
         irregularGridView.layer.borderWidth = 0.5f;
@@ -80,9 +80,8 @@ typedef enum : NSUInteger {
     for (int i = 0; i < 24; i++) {
         
         CGFloat value = arc4random() % 50 + 60;
-        
         arc4random() % 2 ?
-        [arrays addObject:[RedButtonCell dataAdapterWithData:@(value) type:0 itemWidth:value]] :
+        [arrays addObject:[RedButtonCell    dataAdapterWithData:@(value) type:0 itemWidth:value]]:
         [arrays addObject:[YellowButtonCell dataAdapterWithData:@(value) type:0 itemWidth:value]];
     }
     
@@ -90,8 +89,8 @@ typedef enum : NSUInteger {
     IrregularGridCollectionView *irregularGridView;
     irregularGridView = [IrregularGridCollectionView irregularGridCollectionViewWithFrame:CGRectMake(0, 10 + 20 + 120, Width, 0)
                                                                                  delegate:self
-                                                                            registerCells:@[gridViewCellClassType([YellowButtonCell class], @"YellowButtonCell"),
-                                                                                            gridViewCellClassType([RedButtonCell class],    @"RedButtonCell")]
+                                                                            registerCells:@[gridViewCellClassType([YellowButtonCell class], nil),
+                                                                                            gridViewCellClassType([RedButtonCell class],    nil)]
                                                                           scrollDirection:UICollectionViewScrollDirectionVertical
                                                                         contentEdgeInsets:UIEdgeInsetsMake(10, 10, 10, 10)
                                                                               verticalGap:10
@@ -102,7 +101,7 @@ typedef enum : NSUInteger {
     [irregularGridView resetSize];
     [self.view addSubview:irregularGridView];
     
-    // Debug.
+    // Debug frame.
     if (/* DISABLES CODE */ (1)) {
         
         irregularGridView.layer.borderWidth = 0.5f;
