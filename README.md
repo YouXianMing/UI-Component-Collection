@@ -209,3 +209,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > 用SDWebImage渐变加载图片
 
 ![demo1.png](http://images2015.cnblogs.com/blog/607542/201611/607542-20161104142657768-1283049319.gif)
+
+### IrregularGridCollectionView
+
+> IrregularGridCollectionView处理不定宽度的标签cell
+
+![demo1.png](http://images2015.cnblogs.com/blog/607542/201611/607542-20161107114830999-1271977194.gif)
