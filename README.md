@@ -215,3 +215,9 @@ The demo will demonstrate how to use it, enjoy it :)
 > IrregularGridCollectionView处理不定宽度的标签cell
 
 ![demo1.png](http://images2015.cnblogs.com/blog/607542/201611/607542-20161107114830999-1271977194.gif)
+
+### ParagraphString
+
+> 简易的处理段落样式
+
+![demo1.png](http://images2015.cnblogs.com/blog/607542/201611/607542-20161116171423232-719652907.gif)
